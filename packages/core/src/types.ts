@@ -17,3 +17,5 @@ export interface AsciiError {
   error: string;
   code: string;
 }
+
+export type AnimationKind = 'morph' | 'reveal' | 'wave';
