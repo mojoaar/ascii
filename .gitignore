@@ -1,0 +1,11 @@
+node_modules/
+.next/
+dist/
+coverage/
+*.log
+.env
+.env.local
+apps/cli/bin/
+apps/cli/fonts/*.flf
+apps/cli/fonts/fonts.json
+.DS_Store
