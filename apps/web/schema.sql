@@ -1,0 +1,33 @@
+PRAGMA journal_mode = WAL;
+
+CREATE TABLE IF NOT EXISTS generations (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts INTEGER NOT NULL,
+  source TEXT NOT NULL DEFAULT 'web',
+  font TEXT NOT NULL,
+  width INTEGER,
+  ok INTEGER NOT NULL DEFAULT 1,
+  text_hash TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_generations_ts ON generations(ts);
+CREATE INDEX IF NOT EXISTS idx_generations_font ON generations(font);
+
+CREATE TABLE IF NOT EXISTS settings (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS fonts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL UNIQUE,
+  content TEXT NOT NULL,
+  author TEXT NOT NULL DEFAULT '',
+  source TEXT NOT NULL DEFAULT '',
+  license TEXT NOT NULL DEFAULT '',
+  created_at INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS admin_sessions (
+  token TEXT PRIMARY KEY,
+  expires_at INTEGER NOT NULL
+);
