@@ -1,6 +1,6 @@
 import { generate } from '@ascii/core';
 import { apiError } from '@/lib/api';
-import { getRateLimiter } from '@/lib/ratelimit';
+import { getRateLimiter, applyRateLimitHeaders } from '@/lib/ratelimit';
 import { recordGeneration } from '@/lib/stats';
 
 export const dynamic = 'force-dynamic';
@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';
   const lim = rl.allow(ip);
   if (!lim.ok) {
-    return apiError('rate_limited', 'too many requests', 429);
+    return applyRateLimitHeaders(apiError('rate_limited', 'too many requests', 429), lim);
   }
 
   let body: { text?: string; font?: string; width?: number; horizontalLayout?: never; verticalLayout?: never };
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       verticalLayout: body.verticalLayout,
     });
     recordGeneration('api', body.font ?? 'Standard', body.width ?? null, true, text);
-    return Response.json({ output });
+    return applyRateLimitHeaders(Response.json({ output }), lim);
   } catch (e) {
     recordGeneration('api', body.font ?? 'Standard', body.width ?? null, false, text);
     console.error(JSON.stringify({ category: 'api', endpoint: 'generate', error: String(e) }));
