@@ -25,7 +25,6 @@ export default function Generator() {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Type text…"
-        autoFocus
       />
       <div className="gen-controls">
         <FontPicker value={font} onChange={setFont} />
