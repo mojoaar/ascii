@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll } from 'vitest';
-import { verifyAdminToken, createAdminSession, verifyAdminSession, revokeAdminSession, isAdminEnabled } from './admin-auth';
+import { verifyAdminToken, createAdminSession, verifyAdminSession, revokeAdminSession, isAdminEnabled, requireAdmin, ADMIN_SESSION_COOKIE } from './admin-auth';
 import { getDb } from './db';
 
 beforeAll(() => {
@@ -30,5 +30,33 @@ describe('admin-auth', () => {
 
   it('is enabled when token set', () => {
     expect(isAdminEnabled()).toBe(true);
+  });
+});
+
+describe('requireAdmin', () => {
+  it('returns 404 when admin disabled', () => {
+    const prev = process.env.ADMIN_TOKEN;
+    delete process.env.ADMIN_TOKEN;
+    try {
+      const r = requireAdmin(new Request('http://x'));
+      expect(r.ok).toBe(false);
+      if (!r.ok) expect(r.res.status).toBe(404);
+    } finally {
+      process.env.ADMIN_TOKEN = prev;
+    }
+  });
+
+  it('returns 401 without a valid session cookie', () => {
+    const r = requireAdmin(new Request('http://x'));
+    expect(r.ok).toBe(false);
+    if (!r.ok) expect(r.res.status).toBe(401);
+  });
+
+  it('accepts a valid session cookie', () => {
+    const { cookie } = createAdminSession();
+    const r = requireAdmin(
+      new Request('http://x', { headers: { cookie: `${ADMIN_SESSION_COOKIE}=${cookie}` } }),
+    );
+    expect(r.ok).toBe(true);
   });
 });
