@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import FontPicker from './FontPicker';
 import AsciiOutput from './AsciiOutput';
+import AttributionFooter from './AttributionFooter';
 import { useLocale } from '@/lib/i18n';
 
 export default function Generator() {
@@ -53,6 +54,7 @@ export default function Generator() {
         </label>
       </div>
       <AsciiOutput text={text} font={font} width={width === '' ? undefined : width} layout={layout} animate={animate} />
+      <AttributionFooter font={font} />
     </main>
   );
 }

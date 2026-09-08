@@ -17,6 +17,7 @@ export const da: Record<MessageKey, string> = {
   'gen.copy': 'Kopiér',
   'gen.download': 'Download',
   'gen.attribution': 'Skrifttype: {font} — af {author}',
+  'gen.license': 'Licens',
   'shortcuts.title': 'Tastaturgenveje',
   'shortcuts.cycleTheme': 'Skift tema',
   'shortcuts.darkMode': 'Skift mørk/lys',

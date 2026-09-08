@@ -14,6 +14,7 @@ export const en = {
   'gen.copy': 'Copy',
   'gen.download': 'Download',
   'gen.attribution': 'Font: {font} — by {author}',
+  'gen.license': 'License',
   'shortcuts.title': 'Keyboard shortcuts',
   'shortcuts.cycleTheme': 'Cycle theme',
   'shortcuts.darkMode': 'Toggle dark/light',
