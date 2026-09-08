@@ -9,10 +9,11 @@ export async function POST(req: Request) {
   const token = String(form.get('token') ?? '');
   if (!verifyAdminToken(token)) return apiError('unauthorized', 'invalid token', 401);
   const { cookie, expiresAt } = createAdminSession();
+  const secure = process.env.NODE_ENV === 'production' ? '; Secure' : '';
   const res = Response.json({ ok: true });
   res.headers.set(
     'Set-Cookie',
-    `${ADMIN_SESSION_COOKIE}=${cookie}; HttpOnly; Path=/; SameSite=Lax; Max-Age=${Math.floor((expiresAt - Date.now()) / 1000)}`,
+    `${ADMIN_SESSION_COOKIE}=${cookie}; HttpOnly; Path=/; SameSite=Lax${secure}; Max-Age=${Math.floor((expiresAt - Date.now()) / 1000)}`,
   );
   return res;
 }
