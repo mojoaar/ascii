@@ -1,0 +1,19 @@
+export interface Font {
+  name: string;
+  author: string;
+  source: string;
+  license: string;
+  copyright: string;
+}
+
+export interface GenerateOptions {
+  font?: string;
+  width?: number;
+  horizontalLayout?: 'default' | 'full' | 'fitted' | 'controlled smushing';
+  verticalLayout?: 'default' | 'fitted' | 'controlled smushing';
+}
+
+export interface AsciiError {
+  error: string;
+  code: string;
+}
