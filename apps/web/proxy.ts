@@ -4,8 +4,9 @@ import { buildCsp } from '@/lib/csp';
 
 export function proxy(request: NextRequest) {
   const nonce = crypto.randomUUID();
-  const response = NextResponse.next();
-  response.headers.set('x-nonce', nonce);
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-nonce', nonce);
+  const response = NextResponse.next({ request: { headers: requestHeaders } });
   response.headers.set('Content-Security-Policy', buildCsp(nonce));
   return response;
 }
