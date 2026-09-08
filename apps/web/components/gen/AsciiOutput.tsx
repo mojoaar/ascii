@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { generate, animate } from '@ascii/core';
 import { crtStyle } from '@/lib/effects';
 
 interface Props {
@@ -17,23 +16,38 @@ export default function AsciiOutput({ text, font, width, layout, animate: doAnim
 
   useEffect(() => {
     let cancelled = false;
+    let intervalId: ReturnType<typeof setInterval> | undefined;
+
     (async () => {
       if (doAnimate) {
-        const { frames } = await animate(text, { font, kind: 'reveal' });
-        if (cancelled) return;
+        const res = await fetch('/api/animate', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ text, font, kind: 'reveal' }),
+        });
+        if (cancelled || !res.ok) return;
+        const { frames } = (await res.json()) as { frames: string[] };
         let i = 0;
-        const id = setInterval(() => {
+        intervalId = setInterval(() => {
           setArt(frames[i] ?? '');
           i += 1;
-          if (i >= frames.length) clearInterval(id);
+          if (i >= frames.length && intervalId) clearInterval(intervalId);
         }, 80);
-        return () => clearInterval(id);
+        return;
       }
-      const out = await generate(text, { font, width, horizontalLayout: layout });
-      if (!cancelled) setArt(out);
+      const res = await fetch('/api/generate', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ text, font, width, horizontalLayout: layout }),
+      });
+      if (cancelled || !res.ok) return;
+      const { output } = (await res.json()) as { output: string };
+      setArt(output);
     })();
+
     return () => {
       cancelled = true;
+      if (intervalId) clearInterval(intervalId);
     };
   }, [text, font, width, layout, doAnimate]);
 
