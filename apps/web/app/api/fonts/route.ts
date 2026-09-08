@@ -2,11 +2,13 @@ import { listFonts } from '@ascii/core';
 import { requireAdmin } from '@/lib/admin-auth';
 import { apiError } from '@/lib/api';
 import { getDb } from '@/lib/db';
+import { uploadedFonts, mergeFonts } from '@/lib/uploaded-fonts';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
-  const fonts = await listFonts();
+  const curated = await listFonts();
+  const fonts = mergeFonts(curated, uploadedFonts());
   return Response.json({ fonts });
 }
 
@@ -18,7 +20,8 @@ export async function POST(req: Request) {
   if (!file) return apiError('invalid_input', 'file is required');
   const content = await file.text();
   if (!content.startsWith('flf2a')) return apiError('invalid_input', 'not a valid .flf font');
-  const name = String(form.get('name') ?? file.name.replace(/\.flf$/, ''));
+  const name = String(form.get('name') ?? file.name.replace(/\.flf$/, '')).trim();
+  if (!name) return apiError('invalid_input', 'font name is required');
   getDb()
     .prepare('INSERT INTO fonts (name, content, author, source, license, created_at) VALUES (?,?,?,?,?,?) ON CONFLICT(name) DO UPDATE SET content = excluded.content')
     .run(name, content, String(form.get('author') ?? ''), String(form.get('source') ?? ''), String(form.get('license') ?? ''), Date.now());
