@@ -34,7 +34,7 @@ const httpServer = createServer(async (req: IncomingMessage, res: ServerResponse
     res.end(JSON.stringify({ ok: true }));
     return;
   }
-  const transport = new StreamableHTTPServerTransport();
+  const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
   res.on('close', () => transport.close());
   await server.connect(transport);
   await transport.handleRequest(req, res);
