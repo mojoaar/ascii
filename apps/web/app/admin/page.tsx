@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { notFound } from 'next/navigation';
 import { isAdminEnabled, ADMIN_SESSION_COOKIE, verifyAdminSession } from '@/lib/admin-auth';
-import { SiteHeader } from '@/components/ui/SiteHeader';
+import SiteHeader from '@/components/ui/SiteHeader';
 import AdminLogin from '@/components/admin/AdminLogin';
 import AdminPanel from '@/components/admin/AdminPanel';
 

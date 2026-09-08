@@ -1,4 +1,4 @@
-import { SiteHeader } from '@/components/ui/SiteHeader';
+import SiteHeader from '@/components/ui/SiteHeader';
 import { SiteFooter } from '@/components/ui/SiteFooter';
 import DocsHighlight from '@/components/docs/DocsHighlight';
 

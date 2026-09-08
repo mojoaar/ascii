@@ -1,5 +1,5 @@
 import { listFonts } from '@ascii/core';
-import { SiteHeader } from '@/components/ui/SiteHeader';
+import SiteHeader from '@/components/ui/SiteHeader';
 import { SiteFooter } from '@/components/ui/SiteFooter';
 import FontCard from '@/components/fonts/FontCard';
 

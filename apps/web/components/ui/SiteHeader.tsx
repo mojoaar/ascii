@@ -1,16 +1,19 @@
+'use client';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import LocaleToggle from './LocaleToggle';
+import { useLocale } from '@/lib/i18n';
 
-export function SiteHeader() {
+export default function SiteHeader() {
+  const { t } = useLocale();
   return (
     <header className="site-header">
-      <Link href="/" className="logo">ascii</Link>
+      <Link href="/" className="logo">{t('home.title')}</Link>
       <nav>
-        <Link href="/">generate</Link>
-        <Link href="/fonts">fonts</Link>
-        <Link href="/docs">docs</Link>
-        <Link href="/admin">admin</Link>
+        <Link href="/">{t('nav.generate')}</Link>
+        <Link href="/fonts">{t('nav.fonts')}</Link>
+        <Link href="/docs">{t('nav.docs')}</Link>
+        <Link href="/admin">{t('nav.admin')}</Link>
       </nav>
       <ThemeToggle />
       <LocaleToggle />

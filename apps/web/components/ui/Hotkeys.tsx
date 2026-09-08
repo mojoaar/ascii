@@ -2,8 +2,10 @@
 import { useEffect, useState } from 'react';
 import { HOTKEYS, matchHotkey } from '@/lib/hotkeys';
 import { isValidTheme, nextTheme } from '@/lib/themes';
+import { useLocale } from '@/lib/i18n';
 
 export default function Hotkeys() {
+  const { t } = useLocale();
   const [overlay, setOverlay] = useState(false);
 
   useEffect(() => {
@@ -60,17 +62,17 @@ export default function Hotkeys() {
   return (
     <div className="shortcuts-overlay" role="dialog" aria-modal="true">
       <div className="shortcuts-panel">
-        <h2>Keyboard shortcuts</h2>
+        <h2>{t('shortcuts.title')}</h2>
         <ul>
-          <li><kbd>T</kbd> cycle theme</li>
-          <li><kbd>D</kbd> dark / light</li>
-          <li><kbd>L</kbd> language</li>
-          <li><kbd>C</kbd> copy output</li>
-          <li><kbd>/</kbd> focus input</li>
-          <li><kbd>G</kbd> docs</li>
-          <li><kbd>A</kbd> admin</li>
-          <li><kbd>?</kbd> this overlay</li>
-          <li><kbd>Esc</kbd> close</li>
+          <li><kbd>T</kbd> {t('shortcuts.cycleTheme')}</li>
+          <li><kbd>D</kbd> {t('shortcuts.darkMode')}</li>
+          <li><kbd>L</kbd> {t('shortcuts.language')}</li>
+          <li><kbd>C</kbd> {t('shortcuts.copy')}</li>
+          <li><kbd>/</kbd> {t('shortcuts.focus')}</li>
+          <li><kbd>G</kbd> {t('shortcuts.docs')}</li>
+          <li><kbd>A</kbd> {t('shortcuts.admin')}</li>
+          <li><kbd>?</kbd> {t('shortcuts.overlay')}</li>
+          <li><kbd>Esc</kbd> {t('shortcuts.close')}</li>
         </ul>
       </div>
     </div>
