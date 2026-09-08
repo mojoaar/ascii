@@ -1,8 +1,9 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const FONT_DIR = join(process.cwd(), 'data', 'fonts');
 const OUT = join(FONT_DIR, 'fonts.json');
+const CLI_FONT_DIR = join(process.cwd(), 'apps', 'cli', 'fonts');
 
 function parseHeader(content) {
   // Header: first line magic "flf2a$ ...", following lines are comments until the char code.
@@ -35,3 +36,20 @@ for (const f of await readdir(FONT_DIR)) {
 fonts.sort((a, b) => a.name.localeCompare(b.name));
 await writeFile(OUT, JSON.stringify(fonts, null, 2) + '\n');
 console.log(`Wrote ${fonts.length} font entries to fonts.json`);
+
+// Go's //go:embed rejects file names containing `'`, `"`, `` ` ``, or `\`.
+// Sanitize only the CLI copy so data/fonts and the web app keep original names.
+function cliSafeName(name) {
+  return name.replace(/['"`\\]/g, '_');
+}
+
+await mkdir(CLI_FONT_DIR, { recursive: true });
+const cliFonts = await readdir(FONT_DIR);
+let copied = 0;
+for (const f of cliFonts) {
+  if (f.endsWith('.flf') || f === 'fonts.json') {
+    await copyFile(join(FONT_DIR, f), join(CLI_FONT_DIR, cliSafeName(f)));
+    copied++;
+  }
+}
+console.log(`Copied ${copied} files to apps/cli/fonts/`);
