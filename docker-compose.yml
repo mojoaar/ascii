@@ -25,6 +25,11 @@ services:
       dockerfile: apps/mcp/Dockerfile
     container_name: ascii-mcp
     restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 256
     ports:
       - "3200:3200"
     environment:
