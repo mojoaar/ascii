@@ -3,8 +3,8 @@
 fonts:
 	node scripts/curate-fonts.mjs
 
-cli:
+cli: fonts
 	cd apps/cli && go build -o bin/ascii ./cmd/ascii
 
-cli-all:
+cli-all: fonts
 	cd apps/cli && ./scripts/build.sh
