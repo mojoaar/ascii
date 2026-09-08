@@ -20,8 +20,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
         {umamiUrl && umamiId ? <script src={umamiUrl} defer data-website-id={umamiId} /> : null}
-        <Hotkeys />
-        <LocaleProvider>{children}</LocaleProvider>
+        <LocaleProvider>
+          <Hotkeys />
+          {children}
+        </LocaleProvider>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export function getStats() {
   const d = getDb();
   const total = (d.prepare('SELECT COUNT(*) AS c FROM generations').get() as { c: number }).c;
   const bySource = d
-    .prepare('SELECT source, COUNT(*) AS c FROM generations GROUP BY source')
+    .prepare('SELECT source, COUNT(*) AS c FROM generations GROUP BY source ORDER BY source')
     .all() as { source: string; c: number }[];
   const byFont = d
     .prepare('SELECT font, COUNT(*) AS c FROM generations GROUP BY font ORDER BY c DESC LIMIT 10')
