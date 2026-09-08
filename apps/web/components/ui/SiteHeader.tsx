@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
+import LocaleToggle from './LocaleToggle';
 
 export function SiteHeader() {
   return (
@@ -12,6 +13,7 @@ export function SiteHeader() {
         <Link href="/admin">admin</Link>
       </nav>
       <ThemeToggle />
+      <LocaleToggle />
     </header>
   );
 }

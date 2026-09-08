@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
+import { LocaleProvider } from '@/lib/i18n';
 import './globals.css';
 
 const THEME_INIT = `(function(){try{var t=localStorage.getItem('ascii-theme')||'terminal';var m=localStorage.getItem('ascii-mode')||'dark';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('data-mode',m);}catch(e){}})()`;
@@ -18,7 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
         {umamiUrl && umamiId ? <script src={umamiUrl} defer data-website-id={umamiId} /> : null}
-        {children}
+        <LocaleProvider>{children}</LocaleProvider>
       </body>
     </html>
   );

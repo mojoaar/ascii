@@ -1,0 +1,31 @@
+import type { en } from './en';
+import type { MessageKey } from './en';
+
+export const da: Record<MessageKey, string> = {
+  'nav.generate': 'generer',
+  'nav.fonts': 'skrifttyper',
+  'nav.docs': 'dokumentation',
+  'nav.admin': 'admin',
+  'home.title': 'ASCII-kunstgenerator',
+  'home.subtitle': 'FIGlet-tekstkunst, selv-hostet',
+  'gen.input.placeholder': 'Skriv tekst…',
+  'gen.font': 'Skrifttype',
+  'gen.width': 'Bredde',
+  'gen.width.auto': 'auto',
+  'gen.layout': 'Layout',
+  'gen.animate': 'Animer',
+  'gen.copy': 'Kopiér',
+  'gen.download': 'Download',
+  'gen.attribution': 'Skrifttype: {font} — af {author}',
+  'shortcuts.title': 'Tastaturgenveje',
+  'shortcuts.cycleTheme': 'Skift tema',
+  'shortcuts.darkMode': 'Skift mørk/lys',
+  'shortcuts.language': 'Skift sprog',
+  'shortcuts.copy': 'Kopiér output',
+  'shortcuts.focus': 'Fokuser input',
+  'shortcuts.docs': 'Gå til dokumentation',
+  'shortcuts.admin': 'Gå til admin',
+  'shortcuts.overlay': 'Denne oversigt',
+  'shortcuts.close': 'Luk',
+  'common.language': 'Sprog',
+};
