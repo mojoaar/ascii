@@ -13,56 +13,55 @@ type Font struct {
 }
 
 // Parse reads standard .flf content.
+//
+// The first line carries the signature and all layout numbers:
+//
+//	flf2a<hardblank> <height> <baseline> <maxLength> <oldLayout>
+//	                 <commentLines> <printDirection> <fullLayout> <codetagCount>
+//
+// followed by <commentLines> comment lines, then 95 glyphs (codes 32..126),
+// each <height> rows terminated by one or two '@' endmarks.
 func Parse(content string) (*Font, error) {
 	lines := strings.Split(content, "\n")
+	if len(lines) == 0 {
+		return nil, errors.New("empty font")
+	}
 	header := lines[0]
 	if len(header) < 6 || header[:5] != "flf2a" {
 		return nil, errors.New("not a flf2a font")
 	}
 	f := &Font{Hardblank: header[5], Glyphs: map[rune][]string{}}
-	// parse height from header line 2 (header comment lines end before the number line)
-	idx := 1
-	for idx < len(lines) && !isNumLine(lines[idx]) {
-		idx++
-	}
-	if idx >= len(lines) {
-		return nil, errors.New("missing height line")
-	}
-	// height is the first token; baseline is second; comment count next
-	toks := strings.Fields(lines[idx])
-	if len(toks) == 0 {
-		return nil, errors.New("empty height line")
+
+	toks := strings.Fields(header[6:])
+	if len(toks) < 1 {
+		return nil, errors.New("missing height")
 	}
 	f.Height = atoi(toks[0])
 	commentLines := 0
-	if len(toks) > 1 {
-		commentLines = atoi(toks[1])
+	if len(toks) > 4 {
+		commentLines = atoi(toks[4])
 	}
-	idx += 1 + commentLines
-	// now read 95 printable ASCII glyphs (space..~)
+
+	idx := 1 + commentLines
 	for code := 32; code <= 126; code++ {
-		if idx+1 >= len(lines) {
-			break
-		}
 		glyph := make([]string, f.Height)
 		for row := 0; row < f.Height; row++ {
 			if idx >= len(lines) {
 				glyph[row] = ""
+				idx++
 				continue
 			}
-			line := lines[idx]
-			if strings.HasSuffix(line, "\r") {
-				line = line[:len(line)-1]
-			}
-			// strip the two end-of-line marker chars (last char is terminator '@')
+			line := strings.TrimSuffix(lines[idx], "\r")
+			idx++
+			// Strip the endmark(s): one '@' always, a second '@' signals a
+			// trailing hardblank (smush).
 			if len(line) > 0 && line[len(line)-1] == '@' {
 				line = line[:len(line)-1]
-			}
-			if len(line) > 0 {
-				line = line[:len(line)-1]
+				if len(line) > 0 && line[len(line)-1] == '@' {
+					line = line[:len(line)-1]
+				}
 			}
 			glyph[row] = strings.ReplaceAll(line, string(f.Hardblank), " ")
-			idx++
 		}
 		f.Glyphs[rune(code)] = glyph
 	}
@@ -87,14 +86,6 @@ func (f *Font) Render(text string, maxWidth int) string {
 		}
 	}
 	return strings.Join(out, "\n")
-}
-
-func isNumLine(s string) bool {
-	if len(s) == 0 {
-		return false
-	}
-	c := s[0]
-	return c >= '0' && c <= '9'
 }
 
 func atoi(s string) int {
