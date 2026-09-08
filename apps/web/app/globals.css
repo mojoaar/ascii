@@ -1,0 +1,105 @@
+:root {
+  --radius: 10px;
+  --transition: 160ms ease;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+/* Terminal (default) — green phosphor */
+[data-theme='terminal'][data-mode='dark'] {
+  --bg: #0a0f0a; --surface: #0e140e; --surface-2: #141c14;
+  --border: #1f2a1f; --text: #b6f0b6; --muted: #6f8f6f;
+  --accent: #33ff66; --accent-strong: #7dffa0; --accent-glow: rgba(51,255,102,0.25);
+  --green: #33ff66; --amber: #ffb000;
+}
+[data-theme='terminal'][data-mode='light'] {
+  --bg: #f4f7f2; --surface: #ffffff; --surface-2: #eef3ec;
+  --border: #d5ded3; --text: #16241a; --muted: #5c6f60;
+  --accent: #1c8f3a; --accent-strong: #14682a; --accent-glow: rgba(28,143,58,0.18);
+  --green: #1c8f3a; --amber: #b37800; color-scheme: light;
+}
+
+/* Catppuccin Mocha / Latte */
+[data-theme='catppuccin'][data-mode='dark'] {
+  --bg: #1e1e2e; --surface: #181825; --surface-2: #313244;
+  --border: #45475a; --text: #cdd6f4; --muted: #a6adc8;
+  --accent: #cba6f7; --accent-strong: #f5c2e7; --accent-glow: rgba(203,166,247,0.28);
+  --green: #a6e3a1; --amber: #f9e2af;
+}
+[data-theme='catppuccin'][data-mode='light'] {
+  --bg: #eff1f5; --surface: #ffffff; --surface-2: #e6e9ef;
+  --border: #ccd0da; --text: #4c4f69; --muted: #8c8fa1;
+  --accent: #8839ef; --accent-strong: #ea76cb; --accent-glow: rgba(136,57,239,0.18);
+  --green: #40a02b; --amber: #df8e1d; color-scheme: light;
+}
+
+/* Dracula (dark-only; light fallback) */
+[data-theme='dracula'][data-mode='dark'] {
+  --bg: #282a36; --surface: #21222c; --surface-2: #343746;
+  --border: #44475a; --text: #f8f8f2; --muted: #6272a4;
+  --accent: #bd93f9; --accent-strong: #ff79c6; --accent-glow: rgba(189,147,249,0.28);
+  --green: #50fa7b; --amber: #f1fa8c;
+}
+[data-theme='dracula'][data-mode='light'] {
+  --bg: #faf8ff; --surface: #ffffff; --surface-2: #efeafb;
+  --border: #ded3f5; --text: #332a4d; --muted: #6c6290;
+  --accent: #7c5cd6; --accent-strong: #c2478f; --accent-glow: rgba(124,92,214,0.18);
+  --green: #2e9e4f; --amber: #a8a123; color-scheme: light;
+}
+
+/* Nord (dark-only; light fallback) */
+[data-theme='nord'][data-mode='dark'] {
+  --bg: #2e3440; --surface: #3b4252; --surface-2: #434c5e;
+  --border: #4c566a; --text: #eceff4; --muted: #81a1c1;
+  --accent: #88c0d0; --accent-strong: #8fbcbb; --accent-glow: rgba(136,192,208,0.25);
+  --green: #a3be8c; --amber: #ebcb8b;
+}
+[data-theme='nord'][data-mode='light'] {
+  --bg: #eceff4; --surface: #ffffff; --surface-2: #e5e9f0;
+  --border: #d8dee9; --text: #2e3440; --muted: #6d7a93;
+  --accent: #5e81ac; --accent-strong: #54739b; --accent-glow: rgba(94,129,172,0.18);
+  --green: #7a9a5e; --amber: #c9a45e; color-scheme: light;
+}
+
+/* GitHub */
+[data-theme='github'][data-mode='dark'] {
+  --bg: #0d1117; --surface: #161b22; --surface-2: #21262d;
+  --border: #30363d; --text: #c9d1d9; --muted: #8b949e;
+  --accent: #58a6ff; --accent-strong: #79c0ff; --accent-glow: rgba(88,166,255,0.25);
+  --green: #3fb950; --amber: #d29922;
+}
+[data-theme='github'][data-mode='light'] {
+  --bg: #ffffff; --surface: #f6f8fa; --surface-2: #eaeef2;
+  --border: #d0d7de; --text: #1f2328; --muted: #59636e;
+  --accent: #0969da; --accent-strong: #0550ae; --accent-glow: rgba(9,105,218,0.18);
+  --green: #1a7f37; --amber: #9a6700; color-scheme: light;
+}
+
+/* Cyberpunk (dark-only; light fallback) */
+[data-theme='cyberpunk'][data-mode='dark'] {
+  --bg: #0d0221; --surface: #15052e; --surface-2: #1f0a44;
+  --border: #3a1d6e; --text: #f0e6ff; --muted: #a78bfa;
+  --accent: #ff2a6d; --accent-strong: #05d9e8; --accent-glow: rgba(255,42,109,0.3);
+  --green: #05ffa1; --amber: #ffd319;
+}
+[data-theme='cyberpunk'][data-mode='light'] {
+  --bg: #fdf7ff; --surface: #ffffff; --surface-2: #f6eaff;
+  --border: #e6d3ff; --text: #2a1040; --muted: #7a5fa0;
+  --accent: #d81b60; --accent-strong: #0891a8; --accent-glow: rgba(216,27,96,0.16);
+  --green: #00a86b; --amber: #c9a500; color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  transition: background var(--transition), color var(--transition);
+}
+
+a { color: var(--accent); }
+
+.shell { max-width: 1100px; margin: 0 auto; padding: 0 24px; min-height: 100vh; display: flex; flex-direction: column; }

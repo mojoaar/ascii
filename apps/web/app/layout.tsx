@@ -1,0 +1,25 @@
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+import './globals.css';
+
+const THEME_INIT = `(function(){try{var t=localStorage.getItem('ascii-theme')||'terminal';var m=localStorage.getItem('ascii-mode')||'dark';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('data-mode',m);}catch(e){}})()`;
+
+export const metadata: Metadata = {
+  title: 'ASCII — text art generator',
+  description: 'Self-hosted FIGlet / ASCII art generator',
+};
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const nonce = (await headers()).get('x-nonce') ?? '';
+  const umamiUrl = process.env.UMAMI_SCRIPT_URL;
+  const umamiId = process.env.UMAMI_WEBSITE_ID;
+  return (
+    <html lang="en" data-theme="terminal" data-mode="dark" suppressHydrationWarning>
+      <body>
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
+        {umamiUrl && umamiId ? <script src={umamiUrl} defer data-website-id={umamiId} /> : null}
+        {children}
+      </body>
+    </html>
+  );
+}
