@@ -6,6 +6,14 @@ import { da } from '@/messages/da';
 export type Locale = 'en' | 'da';
 const dicts: Record<Locale, Record<MessageKey, string>> = { en, da };
 
+function readLocale(): Locale {
+  try {
+    return localStorage.getItem('ascii-locale') === 'da' ? 'da' : 'en';
+  } catch {
+    return 'en';
+  }
+}
+
 type Ctx = {
   locale: Locale;
   setLocale: (l: Locale) => void;
@@ -15,7 +23,7 @@ type Ctx = {
 const LocaleContext = createContext<Ctx | null>(null);
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>('en');
+  const [locale, setLocaleState] = useState<Locale>(readLocale);
   const setLocale = (l: Locale) => {
     setLocaleState(l);
     document.documentElement.setAttribute('lang', l);
