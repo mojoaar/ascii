@@ -68,17 +68,54 @@ func Parse(content string) (*Font, error) {
 	return f, nil
 }
 
-// Render renders text with the font.
+// Render renders text with the font. When maxWidth > 0, output is wrapped so
+// that no line exceeds maxWidth characters, breaking between whole glyphs
+// (a glyph is never split mid-column). Behaviour is unchanged when maxWidth is 0.
 func (f *Font) Render(text string, maxWidth int) string {
-	var out []string
-	for i := 0; i < f.Height; i++ {
-		out = append(out, "")
-	}
+	glyphs := make([][]string, 0, len(text))
 	for _, r := range text {
 		g, ok := f.Glyphs[r]
 		if !ok {
 			g = f.Glyphs['?']
 		}
+		glyphs = append(glyphs, g)
+	}
+
+	if maxWidth <= 0 {
+		return f.join(glyphs)
+	}
+
+	var lines [][][]string
+	var cur [][]string
+	curW := 0
+	for _, g := range glyphs {
+		w := glyphWidth(g)
+		if len(cur) > 0 && curW+w > maxWidth {
+			lines = append(lines, cur)
+			cur = nil
+			curW = 0
+		}
+		cur = append(cur, g)
+		curW += w
+	}
+	if len(cur) > 0 {
+		lines = append(lines, cur)
+	}
+
+	var blocks []string
+	for _, ln := range lines {
+		blocks = append(blocks, f.join(ln))
+	}
+	if len(blocks) == 0 {
+		return ""
+	}
+	return strings.Join(blocks, "\n")
+}
+
+// join renders a list of glyphs into height lines.
+func (f *Font) join(glyphs [][]string) string {
+	out := make([]string, f.Height)
+	for _, g := range glyphs {
 		for i := 0; i < f.Height; i++ {
 			if i < len(g) {
 				out[i] += g[i]
@@ -86,6 +123,16 @@ func (f *Font) Render(text string, maxWidth int) string {
 		}
 	}
 	return strings.Join(out, "\n")
+}
+
+func glyphWidth(g []string) int {
+	w := 0
+	for _, row := range g {
+		if len(row) > w {
+			w = len(row)
+		}
+	}
+	return w
 }
 
 func atoi(s string) int {

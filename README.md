@@ -20,6 +20,8 @@ Download a binary from the latest release and add to `~/.zshrc`:
     ascii "hello" --animate --color
     ascii "hello" --remote https://ascii.johansen.foo
 
+Note: `--layout` only affects `--remote` mode (the local renderer does not implement FIGlet smushing).
+
 ## MCP
 
 Connect your MCP client to `https://ascii.johansen.foo/mcp`.

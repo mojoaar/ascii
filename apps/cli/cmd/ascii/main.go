@@ -64,7 +64,7 @@ func main() {
 	if *remote != "" {
 		out, err = client.Generate(*remote, text, *font, *width)
 	} else {
-		out, err = localRender(text, *font)
+		out, err = localRender(text, *font, *width)
 	}
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "error:", err)
@@ -88,7 +88,7 @@ func main() {
 	_ = layout
 }
 
-func localRender(text, name string) (string, error) {
+func localRender(text, name string, maxWidth int) (string, error) {
 	content, err := fonts.FS.ReadFile(cliSafeName(name) + ".flf")
 	if err != nil {
 		return "", fmt.Errorf("font %q not found", name)
@@ -97,7 +97,7 @@ func localRender(text, name string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return f.Render(text, 0), nil
+	return f.Render(text, maxWidth), nil
 }
 
 func listFonts() {

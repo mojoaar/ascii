@@ -17,6 +17,10 @@ func buildFont() string {
 			rows = []string{"$", "$", "$"}
 		case 'A':
 			rows = []string{" _ ", "/ \\", "|_|"}
+		case 'H':
+			rows = []string{"| |", "|-|", "| |"}
+		case 'I':
+			rows = []string{" _ ", " | ", " | "}
 		}
 		for _, r := range rows {
 			b.WriteString(r)
@@ -60,5 +64,39 @@ func TestRenderSpaceUsesHardblank(t *testing.T) {
 	want := " _   _ \n/ \\ / \\\n|_| |_|"
 	if out != want {
 		t.Fatalf("render = %q, want %q", out, want)
+	}
+}
+
+func TestRenderWidthWrap(t *testing.T) {
+	f, err := Parse(buildFont())
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	out := f.Render("HI", 3)
+	lines := strings.Split(out, "\n")
+	// Two whole-glyph blocks ("H" then "I"), each f.Height(3) lines.
+	if len(lines) != 6 {
+		t.Fatalf("wrapped render produced %d lines, want 6\n%s", len(lines), out)
+	}
+	for _, l := range lines {
+		if len(l) > 3 {
+			t.Fatalf("line %q exceeds maxWidth 3", l)
+		}
+	}
+}
+
+func TestRenderWidthWrapNoSplit(t *testing.T) {
+	f, err := Parse(buildFont())
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	// A single glyph wider than maxWidth is kept whole (never split).
+	out := f.Render("H", 1)
+	lines := strings.Split(out, "\n")
+	if len(lines) != 3 {
+		t.Fatalf("render produced %d lines, want 3\n%s", len(lines), out)
+	}
+	if lines[0] != "| |" {
+		t.Fatalf("glyph was split: %q", out)
 	}
 }
