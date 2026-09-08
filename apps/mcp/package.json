@@ -1,0 +1,8 @@
+{
+  "name": "@ascii/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": { "start": "node src/server.js", "dev": "tsx watch src/server.ts", "lint": "tsc --noEmit", "test": "vitest run" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.10.0", "zod": "^3.23.8" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^7.0.2", "vitest": "^4.1.10" }
+}
