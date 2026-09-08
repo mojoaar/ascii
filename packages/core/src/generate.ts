@@ -1,5 +1,10 @@
 import figlet from 'figlet';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type { GenerateOptions } from './types';
+
+const fontPath = process.env.FONT_DIR ?? join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..', 'data', 'fonts');
+figlet.defaults({ fontPath });
 
 export async function generate(text: string, opts: GenerateOptions = {}): Promise<string> {
   if (!text) return '';

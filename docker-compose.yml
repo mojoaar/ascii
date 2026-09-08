@@ -1,0 +1,37 @@
+services:
+  web:
+    build: .
+    container_name: ascii-web
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 256
+    ports:
+      - "3000:3000"
+    volumes:
+      - ascii-data:/data
+    environment:
+      TZ: ${TZ:-Europe/Copenhagen}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      ADMIN_SESSION_TTL_SECONDS: ${ADMIN_SESSION_TTL_SECONDS:-28800}
+      UMAMI_SCRIPT_URL: ${UMAMI_SCRIPT_URL:-}
+      UMAMI_WEBSITE_ID: ${UMAMI_WEBSITE_ID:-}
+
+  mcp:
+    build:
+      context: .
+      dockerfile: apps/mcp/Dockerfile
+    container_name: ascii-mcp
+    restart: unless-stopped
+    ports:
+      - "3200:3200"
+    environment:
+      ASCII_API_URL: http://web:3000
+      PORT: 3200
+    depends_on:
+      - web
+
+volumes:
+  ascii-data:
