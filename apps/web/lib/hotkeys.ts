@@ -12,7 +12,6 @@ export const HOTKEYS: HotkeyBinding[] = [
   { key: 'l', action: 'toggle-locale' },
   { key: '/', action: 'focus-input' },
   { key: 'g', action: 'goto-docs' },
-  { key: 'a', action: 'goto-admin' },
   { key: '?', shift: true, action: 'toggle-overlay' },
 ];
 

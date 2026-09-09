@@ -33,9 +33,6 @@ export default function Hotkeys() {
         case 'goto-docs':
           window.location.href = '/docs';
           break;
-        case 'goto-admin':
-          window.location.href = '/admin';
-          break;
         case 'toggle-overlay':
           setOverlay((v) => !v);
           break;
@@ -63,7 +60,6 @@ export default function Hotkeys() {
           <li><kbd>L</kbd> {t('shortcuts.language')}</li>
           <li><kbd>/</kbd> {t('shortcuts.focus')}</li>
           <li><kbd>G</kbd> {t('shortcuts.docs')}</li>
-          <li><kbd>A</kbd> {t('shortcuts.admin')}</li>
           <li><kbd>?</kbd> {t('shortcuts.overlay')}</li>
           <li><kbd>Esc</kbd> {t('shortcuts.close')}</li>
         </ul>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
+import Script from 'next/script';
 import { LocaleProvider } from '@/lib/i18n';
 import Hotkeys from '@/components/ui/Hotkeys';
 import './globals.css';
@@ -18,8 +19,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en" data-theme="terminal" data-mode="dark" suppressHydrationWarning>
       <body>
-        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
-        {umamiUrl && umamiId ? <script src={umamiUrl} defer data-website-id={umamiId} /> : null}
+        <Script id="theme-init" strategy="beforeInteractive" nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
+        {umamiUrl && umamiId ? <Script src={umamiUrl} data-website-id={umamiId} strategy="afterInteractive" /> : null}
         <LocaleProvider>
           <Hotkeys />
           {children}

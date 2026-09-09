@@ -14,7 +14,6 @@ export default function SiteHeader() {
         <Link href="/">{t('nav.generate')}</Link>
         <Link href="/fonts">{t('nav.fonts')}</Link>
         <Link href="/docs">{t('nav.docs')}</Link>
-        <Link href="/admin">{t('nav.admin')}</Link>
       </nav>
       <ThemeToggle />
       <ModeToggle />
