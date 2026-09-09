@@ -17,6 +17,17 @@ interface Props {
   layout: 'default' | 'full' | 'fitted';
 }
 
+function fitArtSize(art: string): number {
+  const lines = art.split('\n');
+  const cols = Math.max(1, ...lines.map((l) => l.length));
+  const rows = Math.max(1, lines.length);
+  const maxW = (typeof window !== 'undefined' ? window.innerWidth : 1200) - 120;
+  const maxH = (typeof window !== 'undefined' ? window.innerHeight : 800) - 180;
+  const byWidth = maxW / (cols * 0.6);
+  const byHeight = maxH / (rows * 1.05);
+  return Math.max(6, Math.min(16, byWidth, byHeight));
+}
+
 export default function FontWall({ text, width, layout }: Props) {
   const { t } = useLocale();
   const [results, setResults] = useState<Result[]>([]);
@@ -97,6 +108,7 @@ export default function FontWall({ text, width, layout }: Props) {
             <div className="wall-meta">
               <strong>{r.name}</strong>
               {r.author ? <span>by {r.author}</span> : null}
+              {r.copyright ? <span>{r.copyright}</span> : null}
             </div>
           </article>
         ))}
@@ -106,11 +118,16 @@ export default function FontWall({ text, width, layout }: Props) {
           <div className="wall-modal-panel" onClick={(e) => e.stopPropagation()}>
             <div className="wall-modal-head">
               <strong>{viewing.name}</strong>
-              <button type="button" className="wall-modal-close" onClick={() => setViewing(null)}>
-                {t('shortcuts.close')}
-              </button>
+              <div className="wall-modal-actions">
+                <button type="button" className="wall-modal-close" onClick={() => copy(viewing)}>
+                  {copied === viewing.name ? t('gen.copied') : t('gen.copy')}
+                </button>
+                <button type="button" className="wall-modal-close" onClick={() => setViewing(null)}>
+                  {t('shortcuts.close')}
+                </button>
+              </div>
             </div>
-            <pre className="wall-modal-art">{viewing.output}</pre>
+            <pre className="wall-modal-art" style={{ fontSize: fitArtSize(viewing.output) }}>{viewing.output}</pre>
           </div>
         </div>
       )}
