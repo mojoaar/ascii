@@ -22,9 +22,17 @@ export default function FontWall({ text, width, layout }: Props) {
   const [results, setResults] = useState<Result[]>([]);
   const [query, setQuery] = useState('');
   const [copied, setCopied] = useState<string | null>(null);
+  const [viewing, setViewing] = useState<Result | null>(null);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current); }, []);
+
+  useEffect(() => {
+    if (!viewing) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setViewing(null); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [viewing]);
 
   const copy = (r: Result) => {
     navigator.clipboard.writeText(r.output)
@@ -77,6 +85,13 @@ export default function FontWall({ text, width, layout }: Props) {
               >
                 {copied === r.name ? t('gen.copied') : t('gen.copy')}
               </button>
+              <button
+                type="button"
+                className="wall-copy"
+                onClick={() => setViewing(r)}
+              >
+                {t('gen.view')}
+              </button>
             </div>
             <pre className="wall-preview">{r.output}</pre>
             <div className="wall-meta">
@@ -86,6 +101,19 @@ export default function FontWall({ text, width, layout }: Props) {
           </article>
         ))}
       </div>
+      {viewing && (
+        <div className="wall-modal" onClick={() => setViewing(null)} role="dialog" aria-modal="true">
+          <div className="wall-modal-panel" onClick={(e) => e.stopPropagation()}>
+            <div className="wall-modal-head">
+              <strong>{viewing.name}</strong>
+              <button type="button" className="wall-modal-close" onClick={() => setViewing(null)}>
+                {t('shortcuts.close')}
+              </button>
+            </div>
+            <pre className="wall-modal-art">{viewing.output}</pre>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
