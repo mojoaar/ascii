@@ -1,12 +1,5 @@
 [
   {
-    "name": "1Row",
-    "author": "unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "3-D",
     "author": "Unknown",
     "source": "figlet font (bundled)",
@@ -42,20 +35,6 @@
     "copyright": ""
   },
   {
-    "name": "5 Line Oblique",
-    "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Acrobatic",
-    "author": "Randy Ransom 8",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "Alligator",
     "author": "Simon Bradley",
     "source": "figlet font (bundled)",
@@ -72,13 +51,6 @@
   {
     "name": "Alpha",
     "author": "Lennert Stock",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Alphabet",
-    "author": "Wendell Hicken 11",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""
@@ -127,20 +99,6 @@
   },
   {
     "name": "AMC Slash",
-    "author": "LESTER",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "AMC Slider",
-    "author": "LESTER",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "AMC Thin",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
@@ -198,27 +156,6 @@
   {
     "name": "ASCII 9",
     "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "ASCII New Roman",
-    "author": "Marcin Glinski and others from alt.ascii-art ------------------------------------------------- This font has been created using JavE's FIGlet font export assistant. Have a look at",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Avatar",
-    "author": "Claude Martins 02",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "B1FF",
-    "author": "Joe Rumsey 12",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""
@@ -294,13 +231,6 @@
     "copyright": ""
   },
   {
-    "name": "Benjamin",
-    "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "Big",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
@@ -316,13 +246,6 @@
   },
   {
     "name": "Big ASCII 9",
-    "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Big Chief",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
@@ -371,25 +294,11 @@
     "copyright": ""
   },
   {
-    "name": "Bigfig",
-    "author": "Glenn Chappell 4",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "Binary",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars"
-  },
-  {
-    "name": "Block",
-    "author": "Glenn Chappell 4",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
   },
   {
     "name": "Blocks",
@@ -555,13 +464,6 @@
   {
     "name": "Computer",
     "author": "Mike Rosulek",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Contessa",
-    "author": "Christopher Joseph Pirillo",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""
@@ -763,13 +665,6 @@
     "copyright": ""
   },
   {
-    "name": "DWhistled",
-    "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "Efti Chess",
     "author": "Unknown",
     "source": "figlet font (bundled)",
@@ -876,13 +771,6 @@
   },
   {
     "name": "Fire Font-s",
-    "author": "given to modify this font",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Flipped",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
@@ -1092,6 +980,13 @@
     "copyright": ""
   },
   {
+    "name": "hp2640-largetype",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
     "name": "ICL-1900",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
@@ -1262,13 +1157,6 @@
   {
     "name": "Larry 3D 2",
     "author": "Larry Gelberg",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "LCD",
-    "author": "Karl von Laudermann 11",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""
@@ -1589,8 +1477,99 @@
     "copyright": ""
   },
   {
-    "name": "Pepper",
-    "author": "Dr. Pepper",
+    "name": "phm-beyondneo-mono",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-blocky-reverse",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-c64",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-cga",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-dos",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-dos-square",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-largetype",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-lcdmatrix",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-leds",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-minecraft",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-rounded",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-slanted",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-vga",
+    "author": "Philippe Majerus",
+    "source": "figlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": ""
+  },
+  {
+    "name": "phm-vga-square",
+    "author": "Philippe Majerus",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""
@@ -1717,13 +1696,6 @@
   {
     "name": "RubiFont",
     "author": "Unknown",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "Runic",
-    "author": "Bryan Alexander",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
     "copyright": ""

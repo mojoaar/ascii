@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, copyFile, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const FONT_DIR = join(process.cwd(), 'data', 'fonts');
@@ -44,6 +44,18 @@ function cliSafeName(name) {
 }
 
 await mkdir(CLI_FONT_DIR, { recursive: true });
+
+// apps/cli/fonts is a pure build artifact (gitignored). Remove any stale
+// .flf / fonts.json left over from a previous run so removed or renamed fonts
+// don't linger in the Go embed.
+let removed = 0;
+for (const f of await readdir(CLI_FONT_DIR)) {
+  if (f.endsWith('.flf') || f === 'fonts.json') {
+    await unlink(join(CLI_FONT_DIR, f));
+    removed++;
+  }
+}
+
 const cliFonts = await readdir(FONT_DIR);
 let copied = 0;
 for (const f of cliFonts) {
@@ -52,4 +64,4 @@ for (const f of cliFonts) {
     copied++;
   }
 }
-console.log(`Copied ${copied} files to apps/cli/fonts/`);
+console.log(`Copied ${copied} files to apps/cli/fonts/ (removed ${removed} stale)`);

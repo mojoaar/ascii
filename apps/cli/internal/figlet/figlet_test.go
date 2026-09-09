@@ -100,3 +100,44 @@ func TestRenderWidthWrapNoSplit(t *testing.T) {
 		t.Fatalf("glyph was split: %q", out)
 	}
 }
+
+func TestGlyphWidthCountsRunes(t *testing.T) {
+	// "▀" is 3 bytes but 1 rune; glyphWidth must count runes, not bytes.
+	rows := []string{"▀▀▀", "▀", ""}
+	if w := glyphWidth(rows); w != 3 {
+		t.Fatalf("glyphWidth = %d, want 3", w)
+	}
+}
+
+func TestRenderUnicodeBlockGlyph(t *testing.T) {
+	// A block-char font: 'A' renders as a single-column "▀" glyph.
+	var b strings.Builder
+	b.WriteString("flf2a$ 3 2 4 8 0 0 0 0\n")
+	for code := 32; code <= 126; code++ {
+		rows := []string{"", "", ""}
+		switch code {
+		case ' ':
+			rows = []string{"$", "$", "$"}
+		case 'A':
+			rows = []string{"▀", "▀", "▀"}
+		}
+		for _, r := range rows {
+			b.WriteString(r)
+			b.WriteString("@\n")
+		}
+	}
+	f, err := Parse(b.String())
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	out := f.Render("A", 0)
+	want := "▀\n▀\n▀"
+	if out != want {
+		t.Fatalf("render = %q, want %q", out, want)
+	}
+	// Two 1-column glyphs at maxWidth 1 → wraps into 2 blocks of 3 lines each.
+	wrapped := f.Render("AA", 1)
+	if got := len(strings.Split(wrapped, "\n")); got != 6 {
+		t.Fatalf("wrapped lines = %d, want 6\n%s", got, wrapped)
+	}
+}

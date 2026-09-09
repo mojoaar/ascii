@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- 15 modern block-character fonts (PhMajerus/FIGfonts)
+
+### Changed
+- Curated the font set: removed 19 low-quality classic fonts
+
+### Fixed
+- CLI `--width` wrapping miscounted Unicode block glyphs (byte vs. rune length)
+- Font curation left stale files in the CLI font directory after removals
+
 ## [0.1.0] - 2026-09-09
 
 ### Added

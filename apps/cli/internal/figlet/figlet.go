@@ -3,6 +3,7 @@ package figlet
 import (
 	"errors"
 	"strings"
+	"unicode/utf8"
 )
 
 // Font holds parsed .flf glyph data.
@@ -128,8 +129,8 @@ func (f *Font) join(glyphs [][]string) string {
 func glyphWidth(g []string) int {
 	w := 0
 	for _, row := range g {
-		if len(row) > w {
-			w = len(row)
+		if n := utf8.RuneCountInString(row); n > w {
+			w = n
 		}
 	}
 	return w

@@ -1,0 +1,471 @@
+flf2a$ 2 2 7 -1 20 0 0 82
+
+Commodore 64 FIGfont (phm-c64.flf) by Philippe Majerus (www.phm.lu)
+This font uses Unicode 16.0 octant characters to render characters from the
+Commodore 64 computer chargen (characters generator) ROM.
+Note PETSCII is based on an early ASCII version and does not include all
+Basic Latin characters. Notably missing are `{|¦}~, ^ uses its upwards arrow
+form (↑), and \ is replaced by the pound sign (£). Also, originally the _ at
+U+005F was a leftwards arrow (←), but PETSCII includes a low line at 0xA4
+that This font uses instead.
+
+Unicode 16.0 defines the horizontal and vertical one-eighth lines. While the
+Commodore 64 has one-quarter lines (double thickness) instead of those,
+PETSCII is based on the original Commodore PET character set that used single
+thickness. This is the reason of duplicated center horizontal and center
+vertical lines on the Commodore 64, as it doubled the thickness towards the
+center for all those lines. So this font maps them to their one-eighth code
+points, repecting the original PETSCII.
+
+Date: January 14-16, 2025
+
+    @
+    @@
+ ▐▌ @
+ 𜴘𜴉 @@
+𜴡𜴍𜴡𜴍@
+    @@
+𜶦𜵦𜶦𜵦@
+𜴢𜴏𜴢𜴏@@
+𜴘𜷉𜶸𜴀@
+𜴃𜴣𜴖𜺨@@
+▝𜵵𜵩▘@
+🯧𜴂🯧🯦@@
+𜴃𜷠𜵬𜴀@
+▝𜴬𜴱𜴮@@
+ 𜴘𜴖𜺨@
+    @@
+ 𜷡𜴂 @
+ 𜴅𜴫 @@
+ 𜴅𜷞 @
+ 𜴯𜴂 @@
+𜶳𜷞𜷡𜶯@
+𜴃𜴂𜴅𜴀@@
+𜺠𜷓𜶿𜺣@
+ ▝▘ @@
+    @
+ 𜷓🯦 @@
+𜺠▂▂𜺣@
+    @@
+    @
+ 🯧🯦 @@
+  𜷋𜴔@
+𜴘𜴖𜺨 @@
+𜶖𜷂𜶧𜵈@
+▝𜴬𜴱▘@@
+ 𜶦▌ @
+𜴘𜴱𜴬𜴉@@
+𜴃𜴂𜷖🯦@
+🯧𜴮𜴧𜴉@@
+𜴃𜵷𜷖🯦@
+𜴃𜴫𜴱▘@@
+𜺠𜵑𜶪▌@
+𜺫🮂𜴢𜴏@@
+𜴡𜴮𜶟𜴶@
+𜴃𜴫𜴱▘@@
+𜶖𜷂𜶶𜴀@
+▝𜴬𜴱▘@@
+▝𜵷𜵬▘@
+ 𜴡𜴍 @@
+🯧𜷂𜷖🯦@
+▝𜴬𜴱▘@@
+🯧𜷂𜷖𜵈@
+𜴃𜴫𜴱▘@@
+ 𜴘𜴉 @
+ 𜴃𜴀 @@
+ 𜴘𜴉 @
+ 𜷓🯦 @@
+𜺠𜵩𜴂𜺨@
+ 𜴅𜴫𜴉@@
+𜴘𜴧𜴧𜴉@
+𜺫🮂🮂𜺨@@
+𜺫𜴅𜶠𜺣@
+𜴘𜴯𜴂 @@
+𜴃𜴂𜷖🯦@
+ 𜴚𜴊 @@
+𜶖𜵊𜷣𜵈@
+▝𜴬𜴧𜴀@@
+▗𜷉𜷘▖@
+𜴡𜴍𜴡𜴍@@
+▐𜷂𜷖🯦@
+𜴡𜴬𜴱▘@@
+𜶖𜵊𜴅𜴀@
+▝𜴬𜴯𜴀@@
+▐𜵊𜶚▖@
+𜴡𜴬𜴖𜺨@@
+▐𜷂𜴸𜺨@
+𜴡𜴬𜴧𜴉@@
+▐𜷂𜴸𜺨@
+𜴡𜴍  @@
+𜶖𜵊𜶶𜴹@
+▝𜴬𜴱▘@@
+▐𜷀𜷕▌@
+𜴡𜴍𜴡𜴍@@
+ 𜶘𜵊 @
+ 𜴱𜴬 @@
+ 𜺫█𜺨@
+𜴃𜴫𜴗 @@
+▐▙𜴖𜺨@
+𜴡𜴏𜴤𜴉@@
+▐▌  @
+𜴡𜴬𜴧𜴉@@
+▐𜵮𜵩█@
+𜴡𜴍 🮅@@
+▐𜷤▟▌@
+𜴡𜴍𜴢𜴍@@
+𜶖𜵊𜶘𜵈@
+▝𜴬𜴱▘@@
+▐𜷂𜷖🯦@
+𜴡𜴍  @@
+𜶖𜵊𜶘𜵈@
+𜺫𜴇𜴵𜴊@@
+▐𜷂𜷖🯦@
+𜴡𜴏𜴤𜴉@@
+🯧𜷂𜶶𜴀@
+𜴃𜴫𜴱▘@@
+𜺫𜶘𜵊𜺨@
+ 𜴡𜴍 @@
+▐▌▐▌@
+▝𜴬𜴱▘@@
+▐▌▐▌@
+𜺫𜴤𜴖𜺨@@
+▐▌𜺣█@
+𜴡𜴗𜴅🮅@@
+▝𜶡𜵫▘@
+🯧𜴏𜴢🯦@@
+𜴡𜷀𜷕𜴍@
+ 𜴡𜴍 @@
+𜺫𜵳𜵬▘@
+🯧𜴮𜴧𜴉@@
+ █🮂 @
+ 🮅𜴧 @@
+𜺠𜷡𜶮𜴀@
+𜴯𜴮𜴧𜴀@@
+ 🮂█ @
+ 𜴧🮅 @@
+𜺠𜷡𜷞𜺣@
+ ▐▌ @@
+    @
+▂▂▂▂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+ 𜴧𜶜𜺣@
+𜴃𜴮𜴲𜴍@@
+𜶖𜶿▂ @
+𜴡𜴬𜴱▘@@
+𜺠𜵡𜴧 @
+▝𜴬𜴧 @@
+ ▂𜷓𜵈@
+▝𜴬𜴱𜴍@@
+𜺠𜵡𜶜𜺣@
+▝𜴮𜴪𜺨@@
+ 𜷋𜷇𜴹@
+ 𜴡𜴍 @@
+𜺠𜵡𜶜▖@
+𜵲𜶸𜷙𜴍@@
+𜶖𜶿▂ @
+𜴡𜴍𜴡𜴍@@
+ 𜶳𜴹 @
+ 𜴱𜴬 @@
+  𜵸𜴹@
+ ▂𜷕𜴍@@
+𜶖𜵈▂ @
+𜴡𜴏𜴤𜴉@@
+ 𜶙𜵈 @
+ 𜴱𜴬 @@
+▗𜶻𜷋𜶻@
+𜴡𜴏𜴂🮅@@
+▗𜵡𜶜𜺣@
+𜴡𜴍𜴡𜴍@@
+𜺠𜵡𜶜𜺣@
+▝𜴬𜴱▘@@
+▗𜵡𜶜𜺣@
+▐𜵏𜴈𜺨@@
+𜺠𜵡𜶜▖@
+𜺫𜴇𜶛▌@@
+▗𜵡𜶜𜺣@
+𜴡𜴍  @@
+𜺠𜵡𜴧𜴉@
+𜴘𜴪𜴲𜴀@@
+𜴘𜶤𜵥𜴉@
+ ▝𜴬𜴉@@
+▗▖▗▖@
+▝𜴬𜴱𜴍@@
+▗▖▗▖@
+𜺫𜴤𜴖𜺨@@
+▗▖𜺣▄@
+𜺫🮅𜴦𜴏@@
+𜴘𜶻𜷋𜴉@
+𜴘𜴖𜴤𜴉@@
+▗▖▗▖@
+𜵲𜶸𜵯▘@@
+𜴘𜴧▄𜴉@
+𜴘𜴵𜴨𜴉@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+0 FIGlet replacement character
+𜺠𜷃𜵌𜶻@
+𜺫𜴦𜵟𜴂@@
+0x00A0 No-Break Space (NBSP)
+    @
+    @@
+0x00A3 Pound Sign
+𜺠𜷡𜶮𜴀@
+𜴯𜴮𜴧𜴀@@
+0x03C0 Greek Small Letter Pi
+ ▂▂𜵡@
+𜺫🮅𜴡𜴍@@
+0x203E Overline
+🮂🮂🮂🮂@
+    @@
+0x2190 Leftwards Arrow
+𜺠𜷡▂▂@
+𜺫𜴦🮂🮂@@
+0x2191 Upwards Arrow
+𜺠𜷡𜷞𜺣@
+ ▐▌ @@
+0x221A Square Root
+𜺠𜺣𜷋𜴖@
+𜴡𜴗𜺨 @@
+0x2500 Box Drawings Light Horizontal
+▂▂▂▂@
+🮂🮂🮂🮂@@
+0x2502 Box Drawings Light Vertical
+ ▐▌ @
+ ▐▌ @@
+0x250C Box Drawings Light Down and Right
+ 𜺠▂▂@
+ ▐𜵊🮂@@
+0x2510 Box Drawings Light Down and Left
+▂▂𜺣 @
+🮂𜶘▌ @@
+0x2514 Box Drawings Light Up and Right
+ ▐𜷀▂@
+ 𜺫🮂🮂@@
+0x2518 Box Drawings Light Up and Left
+▂𜷕▌ @
+🮂🮂𜺨 @@
+0x251C Box Drawings Light Vertical and Right
+ ▐𜷀▂@
+ ▐𜵊🮂@@
+0x2524 Box Drawings Light Vertical and Left
+▂𜷕▌ @
+🮂𜶘▌ @@
+0x252C Box Drawings Light Down and Horizontal
+▂▂▂▂@
+🮂𜶘𜵊🮂@@
+0x2534 Box Drawings Light Up and Horizontal
+▂𜷕𜷀▂@
+🮂🮂🮂🮂@@
+0x253C Box Drawings Light Vertical and Horizontal
+▂𜷕𜷀▂@
+🮂𜶘𜵊🮂@@
+0x256D Box Drawings Light Arc Down and Right
+  𜺠▂@
+ 𜶖▛🮂@@
+0x256E Box Drawings Light Arc Down and Left
+▂𜺣  @
+🮂▜𜵈 @@
+0x256F Box Drawings Light Arc Up and Left
+▂▟𜴍 @
+🮂𜺨  @@
+0x2570 Box Drawings Light Arc Up and Right
+ 𜴡▙▂@
+  𜺫🮂@@
+0x2571 Box Drawings Light Diagonal Upper Right to Lower Left
+ 𜺠𜷡𜴗@
+𜷡𜴗𜺨 @@
+0x2572 Box Drawings Light Diagonal Upper Left to Lower Right
+𜴦𜷞𜺣 @
+ 𜺫𜴦𜷞@@
+0x2573 Box Drawings Light Diagonal Cross
+𜴦𜷞𜷡𜴗@
+𜷡𜴗𜴦𜷞@@
+0x2580 Upper Half Block
+████@
+    @@
+0x2581 Lower One Eighth Block
+    @
+▂▂▂▂@@
+0x2582 Lower One Quarter Block
+    @
+▄▄▄▄@@
+0x2583 Lower Three Eighths Block
+    @
+▆▆▆▆@@
+0x2584 Lower Half Block
+    @
+████@@
+0x2588 Full Block
+████@
+████@@
+0x258C Left Half Block
+██  @
+██  @@
+0x258D Left Three Eighths Block
+█▌  @
+█▌  @@
+0x258E Left One Quarter Block
+█   @
+█   @@
+0x258F Left One Eighth Block
+█   @
+█   @@
+0x2590 Right Half Block
+  ██@
+  ██@@
+0x2592 Medium Shade
+▀▄▀▄@
+▀▄▀▄@@
+0x2594 Upper One Eighth Block
+🮂🮂🮂🮂@
+    @@
+0x2595 Right One Eighth Block
+   █@
+   █@@
+0x2596 Quadrant Lower Left
+    @
+██  @@
+0x2597 Quadrant Lower Right
+    @
+  ██@@
+0x2598 Quadrant Upper Left
+██  @
+    @@
+0x259A Quadrant Upper Left and Lower Right
+██  @
+  ██@@
+0x259D Quadrant Upper Right
+  ██@
+    @@
+0x25CF Black Circle
+▗▆▆▖@
+▝🮅🮅▘@@
+0x25CB White Circle
+▗𜵭𜶨▖@
+▝𜴴𜴵▘@@
+0x25E4 Black Upper Left Triangle
+██𜵰𜴂@
+𜵰𜴂  @@
+0x25E5 Black Upper Right Triangle
+𜴅𜶫██@
+  𜴅𜶫@@
+0x2660 Black Spade Suit
+𜺠𜷡𜷤𜶻@
+𜺫𜴲🮅𜴌@@
+0x2663 Black Club Suit
+▗▞▚▖@
+ 𜴱𜴬 @@
+0x2665 Black Heart Suit
+𜶖█𜷥𜷤@
+ 𜴅𜴗𜺨@@
+0x2666 Black Diamond Suit
+𜺠𜷡𜷤𜶻@
+ 𜴅𜴗𜺨@@
+0x2713 Check Mark
+𜺠𜺣𜷋𜴖@
+𜴡𜴗𜺨 @@
+0xE000 PUA#1
+▐𜶒𜵇𜶾𜵇𜷝𜵇▌@
+𜴡𜴩𜴧𜴨𜴨𜴨𜴨𜴍@@
+0x1FB70 Vertical One Eighth Block-2
+▐▌  @
+▐▌  @@
+0x1FB71 Vertical One Eighth Block-3
+ █  @
+ █  @@
+0x1FB72 Vertical One Eighth Block-4
+ ▐▌ @
+ ▐▌ @@
+0x1FB73 Vertical One Eighth Block-5
+ ▐▌ @
+ ▐▌ @@
+0x1FB74 Vertical One Eighth Block-6
+  █ @
+  █ @@
+0x1FB75 Vertical One Eighth Block-7
+  ▐▌@
+  ▐▌@@
+0x1FB76 Horizontal One Eighth Block-2
+𜴳𜴳𜴳𜴳@
+    @@
+0x1FB77 Horizontal One Eighth Block-3
+▄▄▄▄@
+    @@
+0x1FB78 Horizontal One Eighth Block-4
+▂▂▂▂@
+🮂🮂🮂🮂@@
+0x1FB79 Horizontal One Eighth Block-5
+▂▂▂▂@
+🮂🮂🮂🮂@@
+0x1FB7A Horizontal One Eighth Block-6
+    @
+▀▀▀▀@@
+0x1FB7B Horizontal One Eighth Block-7
+    @
+𜴳𜴳𜴳𜴳@@
+0x1FB7C Left And Lower One Eighth Block
+█   @
+█▄▄▄@@
+0x1FB7D Left And Upper One Eighth Block
+█▀▀▀@
+█   @@
+0x1FB7E Right And Upper One Eighth Block
+▀▀▀█@
+   █@@
+0x1FB7F Right And Lower One Eighth Block
+   █@
+▄▄▄█@@
+0x1FB82 Upper One Quarter Block
+▀▀▀▀@
+    @@
+0x1FB83 Upper Three Eighths Block
+🮅🮅🮅🮅@
+    @@
+0x1FB87 Right One Quarter Block
+   █@
+   █@@
+0x1FB88 Right Three Eighths Block
+  ▐█@
+  ▐█@@
+0x1FB8C Left Half Medium Shade
+▀▄  @
+▀▄  @@
+0x1FB8F Lower Half Medium Shade
+    @
+▀▄▀▄@@
+0x1FB90 Inverse Medium Shade
+▄▀▄▀@
+▄▀▄▀@@
+0x1FB95 Checker Board Fill
+▀▄▀▄@
+▀▄▀▄@@
+0x1FB96 Inverse Checker Board Fill
+▄▀▄▀@
+▄▀▄▀@@
+0x1FB98 Upper Left to Lower Right Fill
+𜶠𜵀𜶠𜵀@
+𜶠𜵀𜶠𜵀@@
+0x1FB99 Upper Right to Lower Left Fill
+𜵷𜵩𜵷𜵩@
+𜵷𜵩𜵷𜵩@@
