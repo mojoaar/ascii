@@ -6,6 +6,14 @@ import type { GenerateOptions } from './types';
 const fontPath = process.env.FONT_DIR ?? join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..', 'data', 'fonts');
 figlet.defaults({ fontPath });
 
+function normalizeArt(s: string): string {
+  return s
+    .split('\n')
+    .map((line) => line.replace(/\s+$/, ''))
+    .join('\n')
+    .replace(/\n+$/, '');
+}
+
 export async function generate(text: string, opts: GenerateOptions = {}): Promise<string> {
   if (!text) return '';
   const layout = opts.horizontalLayout ?? 'default';
@@ -21,7 +29,7 @@ export async function generate(text: string, opts: GenerateOptions = {}): Promis
       },
       (err, result) => {
         if (err) reject(err);
-        else resolve(result ?? '');
+        else resolve(normalizeArt(result ?? ''));
       },
     );
   });

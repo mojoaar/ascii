@@ -17,4 +17,11 @@ describe('generate', () => {
     const wide = await generate('hello world this is a long string', { width: 10 });
     expect(wide.split('\n').length).toBeGreaterThan(1);
   });
+
+  it('has no trailing whitespace or blank lines', async () => {
+    const out = await generate('HI');
+    const lines = out.split('\n');
+    expect(lines[lines.length - 1]).not.toBe('');
+    expect(lines.every((l) => l.trimEnd() === l)).toBe(true);
+  });
 });

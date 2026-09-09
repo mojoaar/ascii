@@ -40,6 +40,8 @@ export default function DocsPage() {
           <p>ascii is a self-hosted FIGlet text-art generator. Deploy with Docker Compose and hit the API, the website, or the MCP server.</p>
           <h2>Quick start</h2>
           <Code>{`docker compose up -d\nopen http://localhost:3000`}</Code>
+          <h2>Copying art</h2>
+          <p>ASCII art only lines up in a monospace font. When you copy art, paste it into a monospace context — a code block, a terminal, or a text editor set to a monospace font — or the columns will misalign. Trailing whitespace is trimmed automatically.</p>
 
           <h1 id="api">API reference</h1>
           <Endpoint method="GET" path="/api/health" desc="Health check" />
