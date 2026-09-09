@@ -20,17 +20,11 @@ export default function Hotkeys() {
           localStorage.setItem('ascii-theme', next);
           break;
         }
-        case 'toggle-mode': {
-          const m = document.documentElement.getAttribute('data-mode') === 'light' ? 'dark' : 'light';
-          document.documentElement.setAttribute('data-mode', m);
-          localStorage.setItem('ascii-mode', m);
+        case 'toggle-mode':
+          window.dispatchEvent(new CustomEvent('ascii:toggle-mode'));
           break;
-        }
         case 'toggle-locale':
           window.dispatchEvent(new CustomEvent('ascii:toggle-locale'));
-          break;
-        case 'copy':
-          window.dispatchEvent(new CustomEvent('ascii:copy'));
           break;
         case 'focus-input':
           e.preventDefault();
@@ -67,7 +61,6 @@ export default function Hotkeys() {
           <li><kbd>T</kbd> {t('shortcuts.cycleTheme')}</li>
           <li><kbd>D</kbd> {t('shortcuts.darkMode')}</li>
           <li><kbd>L</kbd> {t('shortcuts.language')}</li>
-          <li><kbd>C</kbd> {t('shortcuts.copy')}</li>
           <li><kbd>/</kbd> {t('shortcuts.focus')}</li>
           <li><kbd>G</kbd> {t('shortcuts.docs')}</li>
           <li><kbd>A</kbd> {t('shortcuts.admin')}</li>

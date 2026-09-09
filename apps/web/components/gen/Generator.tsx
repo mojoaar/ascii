@@ -1,17 +1,13 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import FontPicker from './FontPicker';
-import AsciiOutput from './AsciiOutput';
-import AttributionFooter from './AttributionFooter';
+import FontWall from './FontWall';
 import { useLocale } from '@/lib/i18n';
 
 export default function Generator() {
   const { t } = useLocale();
   const [text, setText] = useState('ascii');
-  const [font, setFont] = useState('Standard');
   const [width, setWidth] = useState<number | ''>('');
   const [layout, setLayout] = useState<'default' | 'full' | 'fitted'>('default');
-  const [animate, setAnimate] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -30,7 +26,6 @@ export default function Generator() {
         placeholder={t('gen.input.placeholder')}
       />
       <div className="gen-controls">
-        <FontPicker value={font} onChange={setFont} />
         <label>
           {t('gen.width')}{' '}
           <input
@@ -48,13 +43,8 @@ export default function Generator() {
             <option value="fitted">fitted</option>
           </select>
         </label>
-        <label>
-          <input type="checkbox" checked={animate} onChange={(e) => setAnimate(e.target.checked)} />
-          {t('gen.animate')}
-        </label>
       </div>
-      <AsciiOutput text={text} font={font} width={width === '' ? undefined : width} layout={layout} animate={animate} />
-      <AttributionFooter font={font} />
+      <FontWall text={text} width={width === '' ? undefined : width} layout={layout} />
     </main>
   );
 }

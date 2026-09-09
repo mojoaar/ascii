@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('generates art on the home page', async ({ page }) => {
   await page.goto('/');
   await page.fill('.gen-input', 'HELLO');
-  await expect(page.locator('.ascii-output')).not.toBeEmpty();
+  await expect(page.locator('.wall-card').first()).toBeVisible();
 });
 
 test('cycles theme with T', async ({ page }) => {

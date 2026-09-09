@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
+import ModeToggle from './ModeToggle';
 import LocaleToggle from './LocaleToggle';
 import { useLocale } from '@/lib/i18n';
 
@@ -16,6 +17,7 @@ export default function SiteHeader() {
         <Link href="/admin">{t('nav.admin')}</Link>
       </nav>
       <ThemeToggle />
+      <ModeToggle />
       <LocaleToggle />
     </header>
   );

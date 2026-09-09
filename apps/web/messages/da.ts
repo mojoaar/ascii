@@ -1,4 +1,3 @@
-import type { en } from './en';
 import type { MessageKey } from './en';
 
 export const da: Record<MessageKey, string> = {
@@ -9,24 +8,19 @@ export const da: Record<MessageKey, string> = {
   'home.title': 'ASCII-kunstgenerator',
   'home.subtitle': 'FIGlet-tekstkunst, selv-hostet',
   'gen.input.placeholder': 'Skriv tekst…',
-  'gen.font': 'Skrifttype',
   'gen.width': 'Bredde',
-  'gen.width.auto': 'auto',
   'gen.layout': 'Layout',
-  'gen.animate': 'Animer',
   'gen.copy': 'Kopiér',
-  'gen.download': 'Download',
-  'gen.attribution': 'Skrifttype: {font} — af {author}',
-  'gen.license': 'Licens',
+  'gen.search.placeholder': 'Filtrér skrifttyper…',
   'shortcuts.title': 'Tastaturgenveje',
   'shortcuts.cycleTheme': 'Skift tema',
   'shortcuts.darkMode': 'Skift mørk/lys',
   'shortcuts.language': 'Skift sprog',
-  'shortcuts.copy': 'Kopiér output',
   'shortcuts.focus': 'Fokuser input',
   'shortcuts.docs': 'Gå til dokumentation',
   'shortcuts.admin': 'Gå til admin',
   'shortcuts.overlay': 'Denne oversigt',
   'shortcuts.close': 'Luk',
   'common.language': 'Sprog',
+  'common.darkMode': 'Skift mørk/lys tilstand',
 };
