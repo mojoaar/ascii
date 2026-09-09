@@ -980,13 +980,6 @@
     "copyright": ""
   },
   {
-    "name": "hp2640-largetype",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "ICL-1900",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
@@ -1477,13 +1470,6 @@
     "copyright": ""
   },
   {
-    "name": "phm-beyondneo-mono",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "phm-blocky-reverse",
     "author": "Philippe Majerus",
     "source": "figlet font (bundled)",
@@ -1491,84 +1477,7 @@
     "copyright": ""
   },
   {
-    "name": "phm-c64",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-cga",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-dos",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-dos-square",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-largetype",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-lcdmatrix",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-leds",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-minecraft",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
     "name": "phm-rounded",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-slanted",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-vga",
-    "author": "Philippe Majerus",
-    "source": "figlet font (bundled)",
-    "license": "as declared in font header",
-    "copyright": ""
-  },
-  {
-    "name": "phm-vga-square",
     "author": "Philippe Majerus",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",

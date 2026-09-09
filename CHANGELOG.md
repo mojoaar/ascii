@@ -8,10 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- 15 modern block-character fonts (PhMajerus/FIGfonts)
+- 2 modern block-character fonts (phm-blocky-reverse, phm-rounded)
 
 ### Changed
 - Curated the font set: removed 19 low-quality classic fonts
+
+### Removed
+- 13 PhMajerus fonts dropped — they use Unicode Symbols-for-Legacy-Computing characters unsupported in browsers and terminals
 
 ### Fixed
 - CLI `--width` wrapping miscounted Unicode block glyphs (byte vs. rune length)
