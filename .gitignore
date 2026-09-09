@@ -13,3 +13,7 @@ apps/cli/fonts/fonts.json
 .DS_Store
 test-results/
 playwright-report/
+*.db
+*.db-shm
+*.db-wal
+apps/web/data/
