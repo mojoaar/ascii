@@ -11,6 +11,7 @@ export const da: Record<MessageKey, string> = {
   'gen.width': 'Bredde',
   'gen.layout': 'Layout',
   'gen.copy': 'Kopiér',
+  'gen.copied': 'Kopieret!',
   'gen.search.placeholder': 'Filtrér skrifttyper…',
   'shortcuts.title': 'Tastaturgenveje',
   'shortcuts.cycleTheme': 'Skift tema',

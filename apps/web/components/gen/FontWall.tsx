@@ -21,6 +21,20 @@ export default function FontWall({ text, width, layout }: Props) {
   const { t } = useLocale();
   const [results, setResults] = useState<Result[]>([]);
   const [query, setQuery] = useState('');
+  const [copied, setCopied] = useState<string | null>(null);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current); }, []);
+
+  const copy = (r: Result) => {
+    navigator.clipboard.writeText(r.output)
+      .then(() => {
+        setCopied(r.name);
+        if (copyTimer.current) clearTimeout(copyTimer.current);
+        copyTimer.current = setTimeout(() => setCopied(null), 1500);
+      })
+      .catch(() => {});
+  };
 
   useEffect(() => {
     const id = setTimeout(() => {
@@ -55,18 +69,20 @@ export default function FontWall({ text, width, layout }: Props) {
       <div className="wall-grid">
         {filtered.map((r) => (
           <article key={r.name} className="wall-card">
+            <div className="wall-head">
+              <button
+                type="button"
+                className="wall-copy"
+                onClick={() => copy(r)}
+              >
+                {copied === r.name ? t('gen.copied') : t('gen.copy')}
+              </button>
+            </div>
             <pre className="wall-preview">{r.output}</pre>
             <div className="wall-meta">
               <strong>{r.name}</strong>
               {r.author ? <span>by {r.author}</span> : null}
             </div>
-            <button
-              type="button"
-              className="wall-copy"
-              onClick={() => navigator.clipboard.writeText(r.output)}
-            >
-              {t('gen.copy')}
-            </button>
           </article>
         ))}
       </div>

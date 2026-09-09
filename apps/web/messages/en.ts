@@ -9,6 +9,7 @@ export const en = {
   'gen.width': 'Width',
   'gen.layout': 'Layout',
   'gen.copy': 'Copy',
+  'gen.copied': 'Copied!',
   'gen.search.placeholder': 'Filter fonts…',
   'shortcuts.title': 'Keyboard shortcuts',
   'shortcuts.cycleTheme': 'Cycle theme',
