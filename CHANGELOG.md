@@ -7,14 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-09-10
+
 ### Added
 - SEO metadata (title template, Open Graph, Twitter cards) and `APP_URL` environment variable
 - PWA support: `/manifest.webmanifest`, `/sitemap.xml`, `/robots.txt`, and `appleWebApp` metadata
 - Adaptive `favicon.svg` and generated PNG fallbacks (32×32, 180×180, 192×192, 512×512) using the `c9-pixel-a` design
 - 10 SVG favicon candidates under `public/favicons/candidates/`
+- Published Docker images for the web and MCP services to `ghcr.io/mojoaar/ascii` and `ghcr.io/mojoaar/ascii-mcp`
+- CLI `--version` flag and SHA-256 checksums for release binaries
+- CLI download links and per-OS install instructions on the docs page
 
 ### Changed
 - Live all-fonts wall on the home page (replaces single-font picker)
+- Text input and font filter now share a 50/50 row on desktop; width/layout controls stay on a second row
 - Per-font copy buttons with "Copied!" feedback
 - View popup for full-width ASCII art
 - Light/dark mode toggle button and `D` keyboard shortcut
