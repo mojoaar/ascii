@@ -5,7 +5,7 @@ export const da: Record<MessageKey, string> = {
   'nav.fonts': 'skrifttyper',
   'nav.docs': 'dokumentation',
   'nav.admin': 'admin',
-  'home.title': 'ASCII-kunstgenerator',
+  'home.title': 'ASCII Generator',
   'home.subtitle': 'FIGlet-tekstkunst, selv-hostet',
   'gen.input.placeholder': 'Skriv tekst…',
   'gen.width': 'Bredde',

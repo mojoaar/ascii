@@ -1,9 +1,9 @@
-:root {
-  --radius: 10px;
-  --transition: 160ms ease;
-  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
-  color-scheme: dark;
-}
+ :root {
+   --radius: 10px;
+   --transition: 160ms ease;
+   --font-mono: var(--font-jetbrains), 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+   color-scheme: dark;
+ }
 
 /* Terminal (default) — green phosphor */
 [data-theme='terminal'][data-mode='dark'] {

@@ -3,7 +3,7 @@ export const en = {
   'nav.fonts': 'fonts',
   'nav.docs': 'docs',
   'nav.admin': 'admin',
-  'home.title': 'ASCII art generator',
+  'home.title': 'ASCII Generator',
   'home.subtitle': 'FIGlet text art, self-hosted',
   'gen.input.placeholder': 'Type text…',
   'gen.width': 'Width',
