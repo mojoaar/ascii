@@ -12,7 +12,7 @@ Self-hosted FIGlet / ASCII art generator. Monorepo, npm workspaces.
 - apps/web — Next.js app + SQLite DB + REST API
 - apps/mcp — MCP server (streamable HTTP)
 - apps/cli — Go CLI (go:embed fonts)
-- data/fonts — canonical .flf fonts + fonts.json attribution manifest (single source of truth)
+- data/fonts — canonical .flf and .tlf fonts + fonts.json attribution manifest (single source of truth)
 
 ## Commands
 - npm run dev / build

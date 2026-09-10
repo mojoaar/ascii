@@ -22,12 +22,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Curated the font set: removed 19 low-quality classic fonts
 - Widened site layout to 1600px for larger screens
+- Loaded JetBrains Mono via `next/font/google` so the monospace stack actually ships
+- Renamed home header from "ASCII art generator" to "ASCII Generator"
 
 ### Removed
 - 13 PhMajerus fonts dropped — they use Unicode Symbols-for-Legacy-Computing characters unsupported in browsers and terminals
 
 ### Fixed
-- `/` focus shortcut now works on international keyboards where `/` is typed with Shift
+- Changed main input focus shortcut from `/` to `I` so it works on international keyboards where `/` requires Shift
 - Admin page shows a friendly disabled message instead of a 404 when `ADMIN_TOKEN` is unset
 - Theme-init script uses `next/script` to silence React 19 dev warning
 - Copy button underline removed; button placed above the preview to avoid overlapping art
