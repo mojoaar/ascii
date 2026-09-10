@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- SEO metadata (title template, Open Graph, Twitter cards) and `APP_URL` environment variable
+- PWA support: `/manifest.webmanifest`, `/sitemap.xml`, `/robots.txt`, and `appleWebApp` metadata
+- Adaptive `favicon.svg` and generated PNG fallbacks (32×32, 180×180, 192×192, 512×512) using the `c9-pixel-a` design
+- 10 SVG favicon candidates under `public/favicons/candidates/`
+
+### Changed
 - Live all-fonts wall on the home page (replaces single-font picker)
 - Per-font copy buttons with "Copied!" feedback
 - View popup for full-width ASCII art
@@ -30,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Changed main input focus shortcut from `/` to `I` so it works on international keyboards where `/` requires Shift
+- `I` shortcut now triggers on both lowercase `i` and uppercase `I`
 - Admin page shows a friendly disabled message instead of a 404 when `ADMIN_TOKEN` is unset
 - Theme-init script uses `next/script` to silence React 19 dev warning
 - Copy button underline removed; button placed above the preview to avoid overlapping art
