@@ -10,7 +10,7 @@ export const HOTKEYS: HotkeyBinding[] = [
   { key: 't', shift: false, action: 'cycle-theme' },
   { key: 'd', shift: false, action: 'toggle-mode' },
   { key: 'l', shift: false, action: 'toggle-locale' },
-  { key: '/', action: 'focus-input' },
+  { key: 'i', shift: false, action: 'focus-input' },
   { key: 'f', shift: false, action: 'focus-filter' },
   { key: 'g', shift: false, action: 'goto-docs' },
   { key: '?', shift: true, action: 'toggle-overlay' },
