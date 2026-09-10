@@ -39,10 +39,12 @@ export const metadata: Metadata = {
     images: ['/og.svg'],
   },
   manifest: '/manifest.webmanifest',
-  icons: {
-    icon: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
-    apple: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
-  },
+  icons: [
+    { rel: 'icon', url: '/favicon.svg', type: 'image/svg+xml' },
+    { rel: 'icon', url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    { rel: 'apple-touch-icon', url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    { rel: 'mask-icon', url: '/favicon.svg', color: '#7c6af7' },
+  ],
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
