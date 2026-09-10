@@ -10,7 +10,7 @@ export async function listFonts(): Promise<Font[]> {
   const __dirname = dirname(fileURLToPath(import.meta.url));
   // packages/core/src -> repo/data/fonts
   const MANIFEST = process.env.FONTS_MANIFEST ?? join(__dirname, '..', '..', '..', 'data', 'fonts', 'fonts.json');
-  const raw = await readFile(MANIFEST, 'utf8');
+  const raw = await readFile(/*turbopackIgnore: true*/ MANIFEST, 'utf8');
   cache = JSON.parse(raw) as Font[];
   return cache!;
 }

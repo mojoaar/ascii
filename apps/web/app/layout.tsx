@@ -43,15 +43,18 @@ export const metadata: Metadata = {
     icon: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
     apple: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f5f6fa' },
-    { media: '(prefers-color-scheme: dark)', color: '#11131a' },
-  ],
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'ASCII Generator',
   },
+};
+
+export const viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f5f6fa' },
+    { media: '(prefers-color-scheme: dark)', color: '#11131a' },
+  ],
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
