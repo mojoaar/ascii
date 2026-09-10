@@ -6,10 +6,20 @@ import (
 	"unicode/utf8"
 )
 
+type horizontalLayout int
+
+const (
+	layoutFull horizontalLayout = iota
+	layoutFitted
+	layoutControlledSmushing
+	layoutUniversalSmushing
+)
+
 // Font holds parsed .flf glyph data.
 type Font struct {
 	Hardblank byte
 	Height    int
+	Layout    horizontalLayout
 	Glyphs    map[rune][]string
 }
 
@@ -31,7 +41,7 @@ func Parse(content string) (*Font, error) {
 	if len(header) < 6 || (header[:5] != "flf2a" && header[:5] != "tlf2a") {
 		return nil, errors.New("not a figlet/toilet font")
 	}
-	f := &Font{Hardblank: header[5], Glyphs: map[rune][]string{}}
+	f := &Font{Hardblank: header[5], Layout: layoutFitted, Glyphs: map[rune][]string{}}
 
 	toks := strings.Fields(header[6:])
 	if len(toks) < 1 {
@@ -41,6 +51,14 @@ func Parse(content string) (*Font, error) {
 	commentLines := 0
 	if len(toks) > 4 {
 		commentLines = atoi(toks[4])
+	}
+	if len(toks) > 3 {
+		oldLayout := atoi(toks[3])
+		f.Layout = parseHorizontalLayout(oldLayout, 0)
+	}
+	if len(toks) > 6 {
+		fullLayout := atoi(toks[6])
+		f.Layout = resolveFullLayout(f.Layout, fullLayout)
 	}
 
 	idx := 1 + commentLines
@@ -113,17 +131,210 @@ func (f *Font) Render(text string, maxWidth int) string {
 	return strings.Join(blocks, "\n")
 }
 
-// join renders a list of glyphs into height lines.
+// join renders a list of glyphs into height lines with kerning/smushing.
 func (f *Font) join(glyphs [][]string) string {
-	out := make([]string, f.Height)
-	for _, g := range glyphs {
-		for i := 0; i < f.Height; i++ {
-			if i < len(g) {
-				out[i] += g[i]
+	if len(glyphs) == 0 {
+		return ""
+	}
+	out := padRows(glyphs[0], f.Height)
+	for _, g := range glyphs[1:] {
+		out = horizontalSmush(out, padRows(g, f.Height), f.Layout)
+	}
+	return strings.Join(out, "\n")
+}
+
+func padRows(g []string, h int) []string {
+	rows := make([]string, h)
+	for i := 0; i < h; i++ {
+		if i < len(g) {
+			rows[i] = g[i]
+		}
+	}
+	w := glyphWidth(rows)
+	for i := range rows {
+		n := utf8.RuneCountInString(rows[i])
+		if n < w {
+			rows[i] += strings.Repeat(" ", w-n)
+		}
+	}
+	return rows
+}
+
+func trimTrailingSpace(rows []string) []string {
+	out := make([]string, len(rows))
+	for i, r := range rows {
+		out[i] = strings.TrimRightFunc(r, func(r rune) bool { return r == ' ' })
+	}
+	return out
+}
+
+func horizontalSmush(left, right []string, layout horizontalLayout) []string {
+	if layout == layoutFull {
+		out := make([]string, len(left))
+		for i := range left {
+			out[i] = left[i] + right[i]
+		}
+		return out
+	}
+	w := len(left[0])
+	maxOverlap := w
+	if wr := len(right[0]); wr > maxOverlap {
+		maxOverlap = wr
+	}
+	overlap := maxOverlap
+
+distLoop:
+	for d := 1; d <= maxOverlap; d++ {
+		if canOverlap(left, right, d, layout) {
+			continue
+		}
+		overlap = d - 1
+		break distLoop
+	}
+	out := make([]string, len(left))
+	for i := range left {
+		l := left[i]
+		r := right[i]
+		prefixLen := w - overlap
+		if prefixLen < 0 {
+			prefixLen = 0
+		}
+		prefix := ""
+		if prefixLen < len(l) {
+			prefix = l[:prefixLen]
+		} else {
+			prefix = l
+		}
+		mid := overlap
+		if mid > len(r) {
+			mid = len(r)
+		}
+		suffix := ""
+		if mid < len(r) {
+			suffix = r[mid:]
+		}
+		piece := mergeOverlap(l, r, w, overlap, layout)
+		out[i] = prefix + piece + suffix
+	}
+	return out
+}
+
+func canOverlap(left, right []string, dist int, layout horizontalLayout) bool {
+	w := len(left[0])
+	start := w - dist
+	for i := range left {
+		l := left[i]
+		r := right[i]
+		for col := 0; col < dist; col++ {
+			lidx := start + col
+			if lidx < 0 || lidx >= len(l) {
+				continue
+			}
+			if lidx < 0 || lidx >= len(l) || col < 0 || col >= len(r) {
+				continue
+			}
+			lc := l[lidx]
+			rc := r[col]
+			if lc != ' ' && rc != ' ' {
+				return layout != layoutFitted
 			}
 		}
 	}
-	return strings.Join(out, "\n")
+	return true
+}
+
+func mergeOverlap(left, right string, leftW, overlap int, layout horizontalLayout) string {
+	start := leftW - overlap
+	var b strings.Builder
+	b.Grow(overlap)
+	for col := 0; col < overlap; col++ {
+		lidx := start + col
+		if lidx < 0 || lidx >= len(left) {
+			b.WriteByte(right[col])
+			continue
+		}
+		if col < 0 || col >= len(right) {
+			b.WriteByte(left[lidx])
+			continue
+		}
+		lc := left[lidx]
+		rc := right[col]
+		if lc == ' ' && rc == ' ' {
+			b.WriteByte(' ')
+		} else if lc == ' ' {
+			b.WriteByte(rc)
+		} else if rc == ' ' {
+			b.WriteByte(lc)
+		} else if layout == layoutFitted {
+			// In strict fitting mode overlapping characters should never occur
+			// because canOverlap rejects them; keep the left character.
+			b.WriteByte(lc)
+		} else {
+			b.WriteByte(universalSmush(lc, rc))
+		}
+	}
+	return b.String()
+}
+
+func universalSmush(a, b byte) byte {
+	if a == b {
+		return a
+	}
+	// Mirror-like pairs collapse; otherwise prefer the left character.
+	pair := string([]byte{a, b})
+	switch pair {
+	case "[]", "][":
+		return '|'
+	case "{", "}":
+		return '|'
+	case "()", ")()":
+		return '|'
+	case "<>", "><":
+		return 'X'
+	case "/\\", "\\/":
+		return '|'
+	}
+	return a
+}
+
+func resolveFullLayout(current horizontalLayout, fullLayout int) horizontalLayout {
+	if fullLayout == 0 {
+		return current
+	}
+	if fullLayout&64 == 64 {
+		return layoutFull
+	}
+	if fullLayout&32 == 32 {
+		return layoutUniversalSmushing
+	}
+	if fullLayout&31 != 0 {
+		return layoutFitted
+	}
+	return current
+}
+
+func parseHorizontalLayout(oldLayout, fullLayout int) horizontalLayout {
+	// Full layout bit (64) forces full-width joining.
+	if fullLayout != 0 && fullLayout&64 == 64 {
+		return layoutFull
+	}
+	// Universal smushing bit (32) forces overlapping character pairs to smush.
+	if fullLayout != 0 && fullLayout&32 == 32 {
+		return layoutUniversalSmushing
+	}
+	// Controlled smushing numbers are not implemented yet; fall back to the
+	// safer fitted kerning used by the web renderer.
+	if fullLayout != 0 && fullLayout&31 != 0 {
+		return layoutFitted
+	}
+	if oldLayout == 0 {
+		return layoutFitted
+	}
+	if oldLayout == -1 {
+		return layoutFull
+	}
+	// Controlled smushing via oldLayout semantics also falls back to fitted.
+	return layoutFitted
 }
 
 func glyphWidth(g []string) int {
@@ -137,12 +348,18 @@ func glyphWidth(g []string) int {
 }
 
 func atoi(s string) int {
+	sign := 1
+	start := 0
+	if len(s) > 0 && s[0] == '-' {
+		sign = -1
+		start = 1
+	}
 	n := 0
-	for _, c := range s {
+	for _, c := range s[start:] {
 		if c < '0' || c > '9' {
 			break
 		}
 		n = n*10 + int(c-'0')
 	}
-	return n
+	return sign * n
 }

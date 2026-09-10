@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CLI download links and per-OS install instructions on the docs page
 
 ### Changed
+- CLI renderer now uses fitted horizontal kerning by default instead of full-width glyph concatenation
 - Live all-fonts wall on the home page (replaces single-font picker)
 - Text input and font filter now share a 50/50 row on desktop; width/layout controls stay on a second row
 - Per-font copy buttons with "Copied!" feedback

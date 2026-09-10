@@ -9,7 +9,7 @@ import (
 // with a known 'A' glyph and a space glyph using the hardblank '$'.
 func buildFont() string {
 	var b strings.Builder
-	b.WriteString("flf2a$ 3 2 4 8 0 0 0 0\n")
+	b.WriteString("flf2a$ 3 2 4 -1 0 0 0 0\n")
 	for code := 32; code <= 126; code++ {
 		rows := []string{"", "", ""}
 		switch code {
@@ -67,6 +67,36 @@ func TestRenderSpaceUsesHardblank(t *testing.T) {
 	}
 }
 
+func TestRenderFittedKerning(t *testing.T) {
+	b := &strings.Builder{}
+	b.WriteString("flf2a$ 3 2 4 0 0 0 0 0\n")
+	for code := 32; code <= 126; code++ {
+		rows := []string{"", "", ""}
+		switch code {
+		case ' ':
+			rows = []string{"$", "$", "$"}
+		case 'A':
+			rows = []string{" _ ", "/ \\", "|_|"}
+		}
+		for _, r := range rows {
+			b.WriteString(r)
+			b.WriteString("@\n")
+		}
+	}
+	f, err := Parse(b.String())
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if f.Layout != layoutFitted {
+		t.Fatalf("layout = %d, want fitted", f.Layout)
+	}
+	out := f.Render("AA", 0)
+	want := " _  _ \n/ \\/ \\\n|_||_|"
+	if out != want {
+		t.Fatalf("render = %q, want %q", out, want)
+	}
+}
+
 func TestRenderWidthWrap(t *testing.T) {
 	f, err := Parse(buildFont())
 	if err != nil {
@@ -112,7 +142,7 @@ func TestGlyphWidthCountsRunes(t *testing.T) {
 func TestRenderUnicodeBlockGlyph(t *testing.T) {
 	// A block-char font: 'A' renders as a single-column "▀" glyph.
 	var b strings.Builder
-	b.WriteString("flf2a$ 3 2 4 8 0 0 0 0\n")
+	b.WriteString("flf2a$ 3 2 4 -1 0 0 0 0\n")
 	for code := 32; code <= 126; code++ {
 		rows := []string{"", "", ""}
 		switch code {
