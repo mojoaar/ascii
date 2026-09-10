@@ -17,4 +17,7 @@ describe('matchHotkey', () => {
   it('matches shift modifier', () => {
     expect(matchHotkey(evt({ key: '?', shiftKey: true, target: null as never }), { key: '?', shift: true, action: 'x' })).toBe(true);
   });
+  it('includes focus-filter binding', () => {
+    expect(HOTKEYS.some((b) => b.key === 'f' && b.action === 'focus-filter')).toBe(true);
+  });
 });

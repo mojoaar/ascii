@@ -17,6 +17,8 @@ export const en = {
   'shortcuts.darkMode': 'Toggle dark/light',
   'shortcuts.language': 'Toggle language',
   'shortcuts.focus': 'Focus input',
+  'shortcuts.filter': 'Focus filter',
+  'shortcuts.clear': 'Clear search',
   'shortcuts.docs': 'Go to docs',
   'shortcuts.admin': 'Go to admin',
   'shortcuts.overlay': 'This overlay',

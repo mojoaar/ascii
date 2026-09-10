@@ -11,7 +11,12 @@ export default function Generator() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const focus = () => inputRef.current?.focus();
+    const focus = () => {
+      const el = inputRef.current;
+      if (!el) return;
+      el.focus();
+      el.select();
+    };
     window.addEventListener('ascii:focus', focus);
     return () => window.removeEventListener('ascii:focus', focus);
   }, []);

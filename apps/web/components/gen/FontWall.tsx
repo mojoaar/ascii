@@ -35,6 +35,7 @@ export default function FontWall({ text, width, layout }: Props) {
   const [copied, setCopied] = useState<string | null>(null);
   const [viewing, setViewing] = useState<Result | null>(null);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const filterRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current); }, []);
 
@@ -44,6 +45,17 @@ export default function FontWall({ text, width, layout }: Props) {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [viewing]);
+
+  useEffect(() => {
+    const focus = () => {
+      const el = filterRef.current;
+      if (!el) return;
+      el.focus();
+      el.select();
+    };
+    window.addEventListener('ascii:focus-filter', focus);
+    return () => window.removeEventListener('ascii:focus-filter', focus);
+  }, []);
 
   const copy = (r: Result) => {
     navigator.clipboard.writeText(r.output)
@@ -79,10 +91,21 @@ export default function FontWall({ text, width, layout }: Props) {
   return (
     <section className="font-wall">
       <input
+        ref={filterRef}
         type="search"
         className="wall-filter"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape') {
+            e.preventDefault();
+            if (query) {
+              setQuery('');
+            } else {
+              filterRef.current?.blur();
+            }
+          }
+        }}
         placeholder={t('gen.search.placeholder')}
       />
       <div className="wall-grid">

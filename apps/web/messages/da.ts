@@ -19,6 +19,8 @@ export const da: Record<MessageKey, string> = {
   'shortcuts.darkMode': 'Skift mørk/lys',
   'shortcuts.language': 'Skift sprog',
   'shortcuts.focus': 'Fokuser input',
+  'shortcuts.filter': 'Fokuser filter',
+  'shortcuts.clear': 'Ryd søgning',
   'shortcuts.docs': 'Gå til dokumentation',
   'shortcuts.admin': 'Gå til admin',
   'shortcuts.overlay': 'Denne oversigt',

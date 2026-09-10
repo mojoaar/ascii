@@ -30,6 +30,10 @@ export default function Hotkeys() {
           e.preventDefault();
           window.dispatchEvent(new CustomEvent('ascii:focus'));
           break;
+        case 'focus-filter':
+          e.preventDefault();
+          window.dispatchEvent(new CustomEvent('ascii:focus-filter'));
+          break;
         case 'goto-docs':
           window.location.href = '/docs';
           break;
@@ -59,6 +63,7 @@ export default function Hotkeys() {
           <li><kbd>D</kbd> {t('shortcuts.darkMode')}</li>
           <li><kbd>L</kbd> {t('shortcuts.language')}</li>
           <li><kbd>/</kbd> {t('shortcuts.focus')}</li>
+          <li><kbd>F</kbd> {t('shortcuts.filter')}</li>
           <li><kbd>G</kbd> {t('shortcuts.docs')}</li>
           <li><kbd>?</kbd> {t('shortcuts.overlay')}</li>
           <li><kbd>Esc</kbd> {t('shortcuts.close')}</li>
