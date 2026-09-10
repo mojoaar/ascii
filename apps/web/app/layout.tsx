@@ -24,8 +24,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const umamiUrl = process.env.UMAMI_SCRIPT_URL;
   const umamiId = process.env.UMAMI_WEBSITE_ID;
   return (
-    <html lang="en" data-theme="terminal" data-mode="dark" suppressHydrationWarning>
-      <body className={jetbrains.variable}>
+    <html lang="en" data-theme="terminal" data-mode="dark" suppressHydrationWarning className={jetbrains.variable}>
+      <body>
         <Script id="theme-init" strategy="beforeInteractive" nonce={nonce} dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
         {umamiUrl && umamiId ? <Script src={umamiUrl} data-website-id={umamiId} strategy="afterInteractive" /> : null}
         <LocaleProvider>
