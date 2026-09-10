@@ -4,12 +4,14 @@ Self-hosted FIGlet / ASCII art generator. Web app + API + MCP server + CLI.
 
 ## Deploy (docker compose)
 
-1. Copy `.env.example` to `.env` and set `ADMIN_TOKEN`, and optionally `UMAMI_*`.
-2. `docker compose up -d`.
+1. Copy `.env.example` to `.env` and set `ADMIN_TOKEN`, and optionally `UMAMI_*` and `APP_URL`.
+2. `docker compose up -d`. Compose pulls the images from `ghcr.io/mojoaar/ascii` and `ghcr.io/mojoaar/ascii-mcp`.
 3. Point nginx-proxy-manager at `ascii.johansen.foo`:
    - `/` → `web:3000`
    - `/mcp` → `mcp:3200`
 4. Open `https://ascii.johansen.foo`.
+
+See <https://ascii.johansen.foo/docs> for full installation instructions, CLI downloads, and environment variables.
 
 ## CLI
 
