@@ -89,7 +89,11 @@ func main() {
 }
 
 func localRender(text, name string, maxWidth int) (string, error) {
-	content, err := fonts.FS.ReadFile(cliSafeName(name) + ".flf")
+	base := cliSafeName(name)
+	content, err := fonts.FS.ReadFile(base + ".flf")
+	if err != nil {
+		content, err = fonts.FS.ReadFile(base + ".tlf")
+	}
 	if err != nil {
 		return "", fmt.Errorf("font %q not found", name)
 	}
@@ -103,8 +107,9 @@ func localRender(text, name string, maxWidth int) (string, error) {
 func listFonts() {
 	entries, _ := fonts.FS.ReadDir(".")
 	for _, e := range entries {
-		if strings.HasSuffix(e.Name(), ".flf") {
-			fmt.Println(strings.TrimSuffix(e.Name(), ".flf"))
+		n := e.Name()
+		if strings.HasSuffix(n, ".flf") || strings.HasSuffix(n, ".tlf") {
+			fmt.Println(strings.TrimSuffix(strings.TrimSuffix(n, ".flf"), ".tlf"))
 		}
 	}
 }

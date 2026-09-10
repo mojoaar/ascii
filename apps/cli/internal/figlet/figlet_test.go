@@ -141,3 +141,21 @@ func TestRenderUnicodeBlockGlyph(t *testing.T) {
 		t.Fatalf("wrapped lines = %d, want 6\n%s", got, wrapped)
 	}
 }
+
+func TestParseTlfHeader(t *testing.T) {
+	// Same glyph data as buildFont, but with tlf2a magic.
+	flf := buildFont()
+	tlf := "tlf2a" + flf[5:]
+	f, err := Parse(tlf)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if f.Height != 3 {
+		t.Fatalf("height = %d, want 3", f.Height)
+	}
+	out := f.Render("A", 0)
+	want := " _ \n/ \\\n|_|"
+	if out != want {
+		t.Fatalf("render = %q, want %q", out, want)
+	}
+}

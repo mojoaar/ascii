@@ -6,7 +6,7 @@ const OUT = join(FONT_DIR, 'fonts.json');
 const CLI_FONT_DIR = join(process.cwd(), 'apps', 'cli', 'fonts');
 
 function parseHeader(content) {
-  // Header: first line magic "flf2a$ ...", following lines are comments until the char code.
+  // Header: first line magic "flf2a$ ..." or "tlf2a$ ...", following lines are comments until the char code.
   const lines = content.split('\n');
   const comments = [];
   for (let i = 1; i < lines.length; i++) {
@@ -20,17 +20,23 @@ function parseHeader(content) {
   return { author: author.trim(), copyright: copyright.trim() };
 }
 
+function sourceFor(ext) {
+  return ext === '.tlf' ? 'TOIlet font (bundled)' : 'figlet font (bundled)';
+}
+
 const fonts = [];
 for (const f of await readdir(FONT_DIR)) {
-  if (!f.endsWith('.flf')) continue;
+  const ext = f.endsWith('.tlf') ? '.tlf' : f.endsWith('.flf') ? '.flf' : undefined;
+  if (!ext) continue;
   const content = await readFile(join(FONT_DIR, f), 'utf8');
   const { author, copyright } = parseHeader(content);
   fonts.push({
-    name: f.replace(/\.flf$/, ''),
+    name: f.replace(/\.flf$|\.tlf$/, ''),
     author,
-    source: 'figlet font (bundled)',
+    source: sourceFor(ext),
     license: 'as declared in font header',
     copyright,
+    format: ext.slice(1),
   });
 }
 fonts.sort((a, b) => a.name.localeCompare(b.name));
@@ -59,7 +65,7 @@ for (const f of await readdir(CLI_FONT_DIR)) {
 const cliFonts = await readdir(FONT_DIR);
 let copied = 0;
 for (const f of cliFonts) {
-  if (f.endsWith('.flf') || f === 'fonts.json') {
+  if (f.endsWith('.flf') || f.endsWith('.tlf') || f === 'fonts.json') {
     await copyFile(join(FONT_DIR, f), join(CLI_FONT_DIR, cliSafeName(f)));
     copied++;
   }

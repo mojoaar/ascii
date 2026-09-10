@@ -4,2176 +4,2679 @@
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "3D Diagonal",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "3D-ASCII",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "3x5",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "4Max",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Alligator",
     "author": "Simon Bradley",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Alligator2",
     "author": "Daniel Wiz. AKA Merlin Greywolf",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Alpha",
     "author": "Lennert Stock",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC 3 Line",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC 3 Liv1",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC AAA01",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Neko",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Razor",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Razor2",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Slash",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Tubes",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "AMC Untitled",
     "author": "LESTER",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ANSI Compact",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ANSI Regular",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ANSI Shadow",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Arrows",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ASCII 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ASCII 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "ascii12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "ascii9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Babyface Lame",
     "author": "cat",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Babyface Leet",
     "author": "cat",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Banner",
     "author": "Ryan Youck",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Banner3",
     "author": "Merlin Greywolf merlin",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Banner3-D",
     "author": "Merlin Greywolf merlin",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Banner4",
     "author": "Merlin Greywolf merlin",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Barbwire",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Basic",
     "author": "Craig O'Flaherty",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bear",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bell",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big ASCII 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big ASCII 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Money-ne",
     "author": "nathan bloomfield",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Money-nw",
     "author": "nathan bloomfield",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Money-se",
     "author": "nathan bloomfield",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Money-sw",
     "author": "nathan bloomfield",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Mono 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Big Mono 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "bigascii12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "bigascii9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "bigmono12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "bigmono9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Binary",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars",
+    "format": "flf"
   },
   {
     "name": "Blocks",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bloody",
     "author": "patorjk",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "BlurVision ASCII",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bolger",
     "author": "Mike Rosulek. 1",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Braced",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bright",
     "author": "Dennis Monk  7",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Broadway",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Broadway KB",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bubble",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Bulbhead",
     "author": "Jef Poskanzer",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Caligraphy",
     "author": "Vinney Thai",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Caligraphy2",
     "author": "Paul Burton September 96 from caligraphy.flf as a demonstration of FigWin features.  Modification took about 5 minutes using FigWin's",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Calvin S",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cards",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Catwalk",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Chiseled",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Chunky",
     "author": "Chris Gill",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "circle",
+    "author": "Sam Hocevar",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Circle",
     "author": "Sam Hocevar",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Classy",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Coder Mini",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Coinstak",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cola",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Colossal",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Computer",
     "author": "Mike Rosulek",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Contrast",
     "author": "Dennis Monk  7",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cosmike",
     "author": "Mike Rosulek",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cosmike2",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Crawford",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Crawford2",
     "author": "PAT or JK",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Crazy",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cricket",
     "author": "Leslie Bates        Jan. 1",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cursive",
     "author": "Jan Wolter",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cyberlarge",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cybermedium",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cybersmall",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Cygnet",
     "author": "CeeJay A cygnet is a baby swan. The font is named so because it's based on the Swan font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "DANC4",
     "author": "Richard Sabey",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Dancing Font",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Decimal",
     "author": "Karlton Wirsing based on binary.flf",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars",
+    "format": "flf"
   },
   {
     "name": "Def Leppard",
     "author": "Hanspeter Niederstrasser 2003-06-29 -- based on Standard Includes all of ASCII and most of ISO Latin-1 figlet release 2.2 -- 19 Feb 1997 Changes",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Delta Corps Priest 1",
     "author": "patorjk.com's FIGFont Editor",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "DiamFont",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Diamond",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Diet Cola",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Digital",
     "author": "Glenn Chappell 1",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Doh",
     "author": "Curtis Wanner",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Doom",
     "author": "Frans P. de Vries",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "DOS Rebel",
     "author": "Valerie Mates",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Dot Matrix",
     "author": "Curtis Wanner",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Double",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Double Shorts",
     "author": "Kent Nassen 11",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Dr Pepper",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Efti Chess",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 3 may 1995 ____________________________________________________________   /`___"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 3 may 1995 ____________________________________________________________   /`___",
+    "format": "flf"
   },
   {
     "name": "Efti Font",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 2.0 -- 27 jan 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 2.0 -- 27 jan 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Efti Italic",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 27 jan 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 27 jan 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Efti Piti",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.1 -- 15 feb 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.1 -- 15 feb 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Efti Robot",
     "author": "patorjk This was to widen the space character.",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 11 may 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 11 may 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Efti Wall",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.5 -- 22 feb 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.5 -- 22 feb 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Efti Water",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 30 aug 1995 ____________________________________________________________   /`__"
+    "copyright": "(c) Michel Eftimakis 1995 -- Version 1.0 -- 30 aug 1995 ____________________________________________________________   /`__",
+    "format": "flf"
   },
   {
     "name": "Electronic",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Elite",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "emboss",
+    "author": "Sam Hocevar",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Emboss",
     "author": "Sam Hocevar",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Emboss 2",
     "author": "Sam Hocevar",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "emboss2",
+    "author": "Sam Hocevar",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Epic",
     "author": "Claude Martins 12",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fender",
     "author": "Scooter 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Filter",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fire Font-k",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fire Font-s",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Flower Power",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Font Font",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Four Tops",
     "author": "Randall Ransom 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fraktur",
     "author": "Philip Menke",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fun Face",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fun Faces",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "future",
+    "author": "Sam Hocevar. 2006",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Future",
     "author": "Sam Hocevar. 2006",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Future Smooth",
     "author": "Sam Hocevar. This variant uses arcs instead of sharp corners to smooth out the font. Because heavy arc characters don't exist",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Future Thin",
     "author": "Sam Hocevar. This variant uses light box drawing characters for a thinner look. 2006",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Fuzzy",
     "author": "Juan Car",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Georgi16",
     "author": "Richard Sabey 8.2003 Includes new parameter supported by FIGlet and FIGWin. To avoid too great a space in",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Georgia11",
     "author": "Richard Sabey",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Ghost",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Ghoulish",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Glenyn",
     "author": ".xXXXXXXx                Lukasz Tyrala",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) COPYRIGHTS MMIV by .xXXXXXXx                Lukasz Tyrala (lt.) /  xXXXXx .`  xDXXx     Permission is hereby given to C"
+    "copyright": "(C) COPYRIGHTS MMIV by .xXXXXXXx                Lukasz Tyrala (lt.) /  xXXXXx .`  xDXXx     Permission is hereby given to C",
+    "format": "flf"
   },
   {
     "name": "Goofy",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Gothic",
     "author": "Howard Chu Figletization suggested bu Bob Bright",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Graceful",
     "author": "Mikhael Goikhman",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Gradient",
     "author": "Philip Menke",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Graffiti",
     "author": "Leigh Purdie",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Greek",
     "author": "Bruce Jakeway--based on Standard by Glenn Chappell & Ian Chai Questions and comments regarding ntgreek.flf to pbjakeway",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Heart Left",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Heart Right",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Henry 3D",
     "author": "Henry Segerman henryseg",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Hex",
     "author": "Karlton Wirsing based on binary.flf",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars",
+    "format": "flf"
   },
   {
     "name": "Hieroglyphs",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Hollywood",
     "author": "Juan Car",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Horizontal Left",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Horizontal Right",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "ICL-1900",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Impossible",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Invita",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Isometric1",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Isometric2",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Isometric3",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Isometric4",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Italic",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Ivrit",
     "author": "John Cowan",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Jacky",
     "author": "Meph.'99",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Jazmine",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Jerusalem",
     "author": "Gedaliah Friedenberg - based on Standard by G. Chappell & Ian Chai Questions and comments regarding jerusalem.flf to gfrieden",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "JS Block Letters",
     "author": "Joan Stark Website",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "JS Bracket Letters",
     "author": "Joan Stark Website",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "JS Capital Curves",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "JS Cursive",
     "author": "Joan Stark Website",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "JS Stick Letters",
     "author": "Joan Stark Website",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Katakana",
     "author": "Vinney Thai",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Kban",
     "author": "Randy Jae Weinstein May 16",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Keyboard",
     "author": "Vinney Thai",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Knob",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Konto",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Konto Slant",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Larry 3D",
     "author": "Larry Gelberg",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Larry 3D 2",
     "author": "Larry Gelberg",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Lean",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "letter",
+    "author": "applicable law. You can redistribute it and",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "Copyright (c) 2008 Francesco Poli 2008-09-21 -- Francesco Poli <frx@firenze.linux.it> font creation This font is free software. I",
+    "format": "tlf"
   },
   {
     "name": "Letter",
     "author": "applicable law. You can redistribute it and",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "Copyright (c) 2008 Francesco Poli 2008-09-21 -- Francesco Poli <frx@firenze.linux.it> font creation This font is free software. I"
+    "copyright": "Copyright (c) 2008 Francesco Poli 2008-09-21 -- Francesco Poli <frx@firenze.linux.it> font creation This font is free software. I",
+    "format": "flf"
   },
   {
     "name": "Letters",
     "author": "Sriram J. Gollapalli",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Lil Devil",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Line Blocks",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Linux",
     "author": "Larry Smith 5",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Lockergnome",
     "author": "Christopher Joseph Pirillo",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Madrid",
     "author": "Juan Car",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Marquee",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Maxfour",
     "author": "Randall Ransom 1",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Merlin1",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Merlin2",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mike",
     "author": "Michael Sullivan 1994 Figlet version of mikewriting generated by hand... Minor errors fixed by Glenn Chappell",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mini",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "miniwi",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mirror",
     "author": "David Walton",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mnemonic",
     "author": "John Cowan",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Modular",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mono 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mono 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "mono12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "mono9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Morse",
     "author": "Glenn Chappell",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Morse2",
     "author": "Glenn Chappell",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Moscow",
     "author": "Tracy Schuhwerk",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Mshebrew210",
     "author": "Michael 'msh210' Hamm 2-5 Nov 2000 for FIGWin. Copyright",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "Copyright (c) 2000 Michael Hamm. Note: uses Gedaliah Friedenberg's Jerusalem font's keyboard map. www.crosswinds.net/~msh210/ has"
+    "copyright": "Copyright (c) 2000 Michael Hamm. Note: uses Gedaliah Friedenberg's Jerusalem font's keyboard map. www.crosswinds.net/~msh210/ has",
+    "format": "flf"
   },
   {
     "name": "Muzzle",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Nancyj",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Nancyj-Fancy",
     "author": "Paul Burton",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Nancyj-Improved",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Nancyj-Underlined",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Nipples",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "NScript",
     "author": "Normand Veilleux",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "NT Greek",
     "author": "Bruce Jakeway--based on Standard by Glenn Chappell & Ian Chai Questions and comments regarding ntgreek.flf to pbjakeway",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "NV Script",
     "author": "Normand Veilleux FIGlet Font compiled by Jerrad Pierce",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "O8",
     "author": "Gordon Lee",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Octal",
     "author": "Karlton Wirsing based on binary.flf",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/05 figlet 2.1 font, includes ISO Latin-1, excludes \"-D\" option chars",
+    "format": "flf"
   },
   {
     "name": "Ogre",
     "author": "Glenn Chappell & Ian Chai 3",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Old Banner",
     "author": "Ryan Youck",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "OS2",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "pagga",
+    "author": "Sam Hocevar and pagga. 2010",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Pagga",
     "author": "Sam Hocevar and pagga. 2010",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Patorjk-HeX",
     "author": "patorjk",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Patorjk's Cheese",
     "author": "patorjk",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Pawp",
     "author": "Curtis Wanner",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Peaks",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Peaks Slant",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on peaks.flf, slanted using slantfigfont."
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on peaks.flf, slanted using slantfigfont.",
+    "format": "flf"
   },
   {
     "name": "Pebbles",
     "author": "Empath",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "phm-blocky-reverse",
     "author": "Philippe Majerus",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "phm-rounded",
     "author": "Philippe Majerus",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Poison",
     "author": "Vinney Thai",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Puffy",
     "author": "Juan Car",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Puzzle",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Pyramid",
     "author": "Claude Martins 02",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rammstein",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "rebel",
+    "author": "Valerie Mates",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Rebel",
     "author": "Valerie Mates",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rectangles",
     "author": "David Villegas",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Red Phoenix",
     "author": "Red Phoenix",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Relief",
     "author": "Nick Miners N.M.Miners",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Relief2",
     "author": "Merlin Greywolf merlin",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Reverse",
     "author": "Matt E. Thurston",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Roman",
     "author": "Nick Miners N.M.Miners",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rot13",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/28. Based on Terminal by Glenn Chappell 4/93 Includes characters 128"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/12/28. Based on Terminal by Glenn Chappell 4/93 Includes characters 128",
+    "format": "flf"
   },
   {
     "name": "Rotated",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rounded",
     "author": "Nick Miners N.M.Miners",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rowan Cap",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Rozzo",
     "author": "Mike Rosulek",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "RubiFont",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Runyc",
     "author": "Bryan Alexander",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "rusto",
+    "author": "xero",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "rustofat",
+    "author": "xero",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "S Blood",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Santa Clara",
     "author": "Jan Wolter",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "copyrighted program by Jan Wolter (janc@crim.eecs.umich.edu) Figlet-ized by Wendell Hicken (whicken@parasoft.com) $$@ $$@ $$@ $$@"
+    "copyright": "copyrighted program by Jan Wolter (janc@crim.eecs.umich.edu) Figlet-ized by Wendell Hicken (whicken@parasoft.com) $$@ $$@ $$@ $$@",
+    "format": "flf"
   },
   {
     "name": "Script",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Serifcap",
     "author": "Bruce M. Binder",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Shaded Blocky",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Shadow",
     "author": "Glenn Chappell 6",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Shimrod",
     "author": "Shimrod",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Short",
     "author": "Sub-Zero",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "SL Script",
     "author": "Jan Wolter",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Slant",
     "author": "Glenn Chappell 3",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Slant Relief",
     "author": "Nick Bryant 12",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Slide",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/08/18. Looks nice in some kind of screens and paper. Feel free to repla"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/08/18. Looks nice in some kind of screens and paper. Feel free to repla",
+    "format": "flf"
   },
   {
     "name": "Small",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small ASCII 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small ASCII 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Block",
     "author": "Sam Hocevar. 2006",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Braille",
     "author": "Sam Hocevar",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Caps",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Isometric1",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Keyboard",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Mono 12",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Mono 9",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Poison",
     "author": "Vinney Thai",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Script",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Shadow",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Slant",
     "author": "Glenn Chappell 6",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Small Tengwar",
     "author": "Belinda Asbell",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "smascii12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "smascii9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "smblock",
+    "author": "Sam Hocevar. 2006",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "smbraille",
+    "author": "Sam Hocevar",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "smmono12",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
+  },
+  {
+    "name": "smmono9",
+    "author": "Unknown",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "Soft",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Speed",
     "author": "Claude Martins 2",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Spliff",
     "author": "nathan bloomfield",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stacey",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stampate",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stampatello",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Standard",
     "author": "Glenn Chappell & Ian Chai 3",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Star Strips",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Star Wars",
     "author": "Ryan Youck",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stellar",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stforek",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stick Letters",
     "author": "Joan Stark Website",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stop",
     "author": "David Walton",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Straight",
     "author": "someone else",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Stronger Than All",
     "author": "patorjk to add X character FIGFont created by patorjk.com's FIGFont Editor",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Sub-Zero",
     "author": "Sub-Zero",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Swamp Land",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Swan",
     "author": "CeeJay -------------------------------------------------",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Sweet",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tanja",
     "author": "Christopher J. Pirillo",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tengwar",
     "author": "Belinda Asbell",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Term",
     "author": "Glenn Chappell 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Terrace",
     "author": "AJN - created with",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Test1",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "The Edge",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Thick",
     "author": "Randall Ransom 2",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Thin",
     "author": "robert",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "THIS",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Thorned",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Three Point",
     "author": "Randall Ransom 4",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Ticks",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on slide.flf. Try option \"-m 1\" to smush o"
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on slide.flf. Try option \"-m 1\" to smush o",
+    "format": "flf"
   },
   {
     "name": "Ticks Slant",
     "author": "Victor Parada",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on ticks.flf, slanted using slantfigfont."
+    "copyright": "(C) 1994 by Victor Parada (vparada@inf.utfsm.cl) 94/09/23. figlet 2.1 font based on ticks.flf, slanted using slantfigfont.",
+    "format": "flf"
   },
   {
     "name": "Tiles",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tinker-Toy",
     "author": "Wendell Hicken 11",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tmplr",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tombstone",
     "author": "Paul Fahn",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": "copyright 1993, RSA Laboratories Specifically, the ASCII lettering from the \"DISTRIBUTION:\" section: \"_ _, _ ___ _, __,  _, _  _,"
+    "copyright": "copyright 1993, RSA Laboratories Specifically, the ASCII lettering from the \"DISTRIBUTION:\" section: \"_ _, _ ___ _, __,  _, _  _,",
+    "format": "flf"
   },
   {
     "name": "Train",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Trek",
     "author": "Peter L. Buschman",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tsalagi",
     "author": "Jerrad Pierce",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Tubular",
     "author": "Ron Fritz 8",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Twisted",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Two Point",
     "author": "Bruce Jakeway",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Univers",
     "author": "Normand Veilleux",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Upside Down Text",
     "author": "Pat Gillespie",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "USA Flag",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Varsity",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Wavescape",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Wavy",
     "author": "Brian Krog 10",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Weird",
     "author": "Unknown",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Wet Letter",
     "author": "given to modify this font",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Whimsy",
     "author": "Kent Nassen",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
+  },
+  {
+    "name": "wideterm",
+    "author": "Sam Hocevar",
+    "source": "TOIlet font (bundled)",
+    "license": "as declared in font header",
+    "copyright": "",
+    "format": "tlf"
   },
   {
     "name": "WideTerm",
     "author": "Sam Hocevar",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   },
   {
     "name": "Wow",
     "author": "pwning nubs in WoW Use it when you feel a nubblestiltskin is just begging to be RUINED. ------------------------------------------------- This font has been created using JavE's FIGlet font export assistant. Have a look at",
     "source": "figlet font (bundled)",
     "license": "as declared in font header",
-    "copyright": ""
+    "copyright": "",
+    "format": "flf"
   }
 ]

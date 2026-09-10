@@ -13,7 +13,7 @@ type Font struct {
 	Glyphs    map[rune][]string
 }
 
-// Parse reads standard .flf content.
+// Parse reads standard .flf or .tlf content.
 //
 // The first line carries the signature and all layout numbers:
 //
@@ -28,8 +28,8 @@ func Parse(content string) (*Font, error) {
 		return nil, errors.New("empty font")
 	}
 	header := lines[0]
-	if len(header) < 6 || header[:5] != "flf2a" {
-		return nil, errors.New("not a flf2a font")
+	if len(header) < 6 || (header[:5] != "flf2a" && header[:5] != "tlf2a") {
+		return nil, errors.New("not a figlet/toilet font")
 	}
 	f := &Font{Hardblank: header[5], Glyphs: map[rune][]string{}}
 

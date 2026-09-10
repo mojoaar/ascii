@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- TOIlet `.tlf` font support in core, web API, Go CLI, and font curation
+- 24 canonical TOIlet fonts from xero/figlet-fonts (ascii12, ascii9, bigascii12, bigascii9, bigmono12, bigmono9, circle, emboss, emboss2, future, letter, mono12, mono9, pagga, rebel, rusto, rustofat, smascii12, smascii9, smblock, smbraille, smmono12, smmono9, wideterm)
 - 2 modern block-character fonts (phm-blocky-reverse, phm-rounded)
 
 ### Changed

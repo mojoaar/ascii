@@ -4,6 +4,7 @@ export interface Font {
   source: string;
   license: string;
   copyright: string;
+  format?: 'flf' | 'tlf';
 }
 
 export interface GenerateOptions {
