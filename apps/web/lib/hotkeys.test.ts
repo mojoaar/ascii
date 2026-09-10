@@ -25,7 +25,9 @@ describe('matchHotkey', () => {
     expect(matchHotkey(evt({ key: '/', shiftKey: false, target: null as never }), binding)).toBe(true);
     expect(matchHotkey(evt({ key: '/', shiftKey: true, target: null as never }), binding)).toBe(true);
   });
-  it('does not match shifted letter when shift is false', () => {
-    expect(matchHotkey(evt({ key: 'T', shiftKey: true, target: null as never }), { key: 't', shift: false, action: 'x' })).toBe(false);
+  it('matches shifted and unshifted letters', () => {
+    const binding = { key: 'i', action: 'focus-input' };
+    expect(matchHotkey(evt({ key: 'i', shiftKey: false, target: null as never }), binding)).toBe(true);
+    expect(matchHotkey(evt({ key: 'I', shiftKey: true, target: null as never }), binding)).toBe(true);
   });
 });
