@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    image: ghcr.io/mojoaar/ascii:0.2.0
     container_name: ascii-web
     restart: unless-stopped
     read_only: true
@@ -18,11 +18,10 @@ services:
       ADMIN_SESSION_TTL_SECONDS: ${ADMIN_SESSION_TTL_SECONDS:-28800}
       UMAMI_SCRIPT_URL: ${UMAMI_SCRIPT_URL:-}
       UMAMI_WEBSITE_ID: ${UMAMI_WEBSITE_ID:-}
+      APP_URL: ${APP_URL:-}
 
   mcp:
-    build:
-      context: .
-      dockerfile: apps/mcp/Dockerfile
+    image: ghcr.io/mojoaar/ascii-mcp:0.2.0
     container_name: ascii-mcp
     restart: unless-stopped
     read_only: true
