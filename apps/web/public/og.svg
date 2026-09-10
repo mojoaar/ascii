@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #0f1117; }
+      .accent { fill: #7c6af7; }
+      .text { fill: #e7e9f0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+      .muted { fill: #9aa3b8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" class="bg"/>
+  <text x="600" y="260" text-anchor="middle" font-size="96" font-weight="700" class="accent">ASCII Generator</text>
+  <text x="600" y="330" text-anchor="middle" font-size="36" class="muted">Self-hosted FIGlet / ASCII art generator</text>
+  <text x="600" y="430" text-anchor="middle" font-size="26" class="text">330+ fonts · REST API · MCP · Go CLI</text>
+</svg>

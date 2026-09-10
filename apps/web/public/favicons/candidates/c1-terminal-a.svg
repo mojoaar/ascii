@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .f { fill: #0f1117 }
+    @media (prefers-color-scheme: dark) { .f { fill: #e7e9f0 } }
+  </style>
+  <rect x="2" y="2" width="28" height="28" rx="5" class="f" opacity="0.12"/>
+  <path d="M9 25 L16 6 L23 25 M11 19 H21" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="f"/>
+</svg>

@@ -14,9 +14,44 @@ const jetbrains = JetBrains_Mono({
 
 const THEME_INIT = `(function(){try{var t=localStorage.getItem('ascii-theme')||'terminal';var m=localStorage.getItem('ascii-mode')||'dark';document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('data-mode',m);}catch(e){}})()`;
 
+const APP_URL = process.env.APP_URL ?? 'http://localhost:3000';
+
 export const metadata: Metadata = {
-  title: 'ASCII Generator',
-  description: 'Self-hosted FIGlet / ASCII art generator',
+  metadataBase: new URL(APP_URL),
+  title: {
+    default: 'ASCII Generator',
+    template: '%s | ASCII Generator',
+  },
+  description: 'Self-hosted FIGlet / ASCII art generator. Browse 330+ fonts, generate ASCII banners, and export from your terminal, API, or MCP client.',
+  keywords: ['ASCII art', 'FIGlet', 'text art', 'monospace', 'banner', 'terminal'],
+  authors: [{ name: 'Morten Johansen', url: 'https://johansen.foo' }],
+  openGraph: {
+    type: 'website',
+    siteName: 'ASCII Generator',
+    title: 'ASCII Generator',
+    description: 'Self-hosted FIGlet / ASCII art generator with 330+ fonts.',
+    images: ['/og.svg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ASCII Generator',
+    description: 'Self-hosted FIGlet / ASCII art generator with 330+ fonts.',
+    images: ['/og.svg'],
+  },
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
+    apple: { url: '/favicons/candidates/c1-terminal-a.svg', type: 'image/svg+xml' },
+  },
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f5f6fa' },
+    { media: '(prefers-color-scheme: dark)', color: '#11131a' },
+  ],
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'ASCII Generator',
+  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
