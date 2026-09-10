@@ -8,7 +8,9 @@ export default function Generator() {
   const [text, setText] = useState('ascii');
   const [width, setWidth] = useState<number | ''>('');
   const [layout, setLayout] = useState<'default' | 'full' | 'fitted'>('default');
+  const [filter, setFilter] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const filterRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const focus = () => {
@@ -21,15 +23,46 @@ export default function Generator() {
     return () => window.removeEventListener('ascii:focus', focus);
   }, []);
 
+  useEffect(() => {
+    const focus = () => {
+      const el = filterRef.current;
+      if (!el) return;
+      el.focus();
+      el.select();
+    };
+    window.addEventListener('ascii:focus-filter', focus);
+    return () => window.removeEventListener('ascii:focus-filter', focus);
+  }, []);
+
   return (
     <main className="gen">
-      <input
-        ref={inputRef}
-        className="gen-input"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder={t('gen.input.placeholder')}
-      />
+      <div className="gen-row">
+        <input
+          ref={inputRef}
+          className="gen-input"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder={t('gen.input.placeholder')}
+        />
+        <input
+          ref={filterRef}
+          type="search"
+          className="wall-filter"
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') {
+              e.preventDefault();
+              if (filter) {
+                setFilter('');
+              } else {
+                filterRef.current?.blur();
+              }
+            }
+          }}
+          placeholder={t('gen.search.placeholder')}
+        />
+      </div>
       <div className="gen-controls">
         <label>
           {t('gen.width')}{' '}
@@ -49,7 +82,7 @@ export default function Generator() {
           </select>
         </label>
       </div>
-      <FontWall text={text} width={width === '' ? undefined : width} layout={layout} />
+      <FontWall text={text} width={width === '' ? undefined : width} layout={layout} filter={filter} />
     </main>
   );
 }

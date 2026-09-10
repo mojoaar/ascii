@@ -108,8 +108,13 @@ a { color: var(--accent); }
 .site-header .logo { font-weight: 700; text-decoration: none; color: var(--text); }
 .site-header nav { display: flex; gap: 16px; flex: 1; }
 .btn { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 4px 12px; cursor: pointer; height: 36px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-mono); line-height: 1; text-decoration: none; }
-.gen { flex: 1; display: flex; flex-direction: column; gap: 20px; padding: 24px 0; }
-.gen-input { width: 100%; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; font-family: var(--font-mono); font-size: 18px; }
+.gen { flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 24px 0; }
+.gen-row { display: flex; gap: 16px; align-items: stretch; flex-wrap: wrap; }
+.gen-row > * { flex: 1 1 calc(50% - 8px); min-width: 260px; }
+.gen-input { width: 100%; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; font-family: var(--font-mono); font-size: 18px; box-sizing: border-box; }
+@media (max-width: 640px) {
+  .gen-row > * { flex: 1 1 100%; }
+}
 .gen-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
 .gen-controls label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
 .gen-controls input, .gen-controls select { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font-family: var(--font-mono); }
@@ -153,7 +158,7 @@ kbd { background: var(--surface-2); border: 1px solid var(--border); border-radi
 .code-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow: auto; }
 
 .font-wall { display: flex; flex-direction: column; gap: 16px; }
-.wall-filter { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-family: var(--font-mono); max-width: 360px; }
+.wall-filter { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-family: var(--font-mono); font-size: 16px; }
 .wall-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 16px; }
 .wall-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 10px; }
 
