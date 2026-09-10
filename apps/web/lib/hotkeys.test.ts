@@ -20,4 +20,12 @@ describe('matchHotkey', () => {
   it('includes focus-filter binding', () => {
     expect(HOTKEYS.some((b) => b.key === 'f' && b.action === 'focus-filter')).toBe(true);
   });
+  it('matches / with or without shift for international keyboards', () => {
+    const binding = { key: '/', action: 'focus-input' };
+    expect(matchHotkey(evt({ key: '/', shiftKey: false, target: null as never }), binding)).toBe(true);
+    expect(matchHotkey(evt({ key: '/', shiftKey: true, target: null as never }), binding)).toBe(true);
+  });
+  it('does not match shifted letter when shift is false', () => {
+    expect(matchHotkey(evt({ key: 'T', shiftKey: true, target: null as never }), { key: 't', shift: false, action: 'x' })).toBe(false);
+  });
 });

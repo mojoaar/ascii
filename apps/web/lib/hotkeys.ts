@@ -7,12 +7,12 @@ export interface HotkeyBinding {
 }
 
 export const HOTKEYS: HotkeyBinding[] = [
-  { key: 't', action: 'cycle-theme' },
-  { key: 'd', action: 'toggle-mode' },
-  { key: 'l', action: 'toggle-locale' },
+  { key: 't', shift: false, action: 'cycle-theme' },
+  { key: 'd', shift: false, action: 'toggle-mode' },
+  { key: 'l', shift: false, action: 'toggle-locale' },
   { key: '/', action: 'focus-input' },
-  { key: 'f', action: 'focus-filter' },
-  { key: 'g', action: 'goto-docs' },
+  { key: 'f', shift: false, action: 'focus-filter' },
+  { key: 'g', shift: false, action: 'goto-docs' },
   { key: '?', shift: true, action: 'toggle-overlay' },
 ];
 
@@ -23,6 +23,7 @@ export function matchHotkey(e: KeyboardEvent, b: HotkeyBinding): boolean {
   if (typing) return false;
   if ((b.ctrl ?? false) !== (e.ctrlKey || e.metaKey)) return false;
   if ((b.meta ?? false) !== e.metaKey) return false;
-  if ((b.shift ?? false) !== e.shiftKey) return false;
+  // When shift is unspecified (e.g. '/'), accept both plain and Shift-produced slashes.
+  if (b.shift !== undefined && b.shift !== e.shiftKey) return false;
   return e.key.toLowerCase() === b.key.toLowerCase();
 }
