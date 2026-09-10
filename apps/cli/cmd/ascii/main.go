@@ -12,6 +12,8 @@ import (
 	"github.com/mojoaar/ascii/cli/internal/render"
 )
 
+const version = "0.2.0"
+
 var safeReplacer = strings.NewReplacer("'", "_", "\"", "_", "`", "_", "\\", "_")
 
 func cliSafeName(s string) string { return safeReplacer.Replace(s) }
@@ -26,6 +28,7 @@ func main() {
 	color := flag.Bool("color", true, "colorize output (ANSI)")
 	noColor := flag.Bool("no-color", false, "disable color")
 	remote := flag.String("remote", "", "remote API base URL")
+	showVersion := flag.Bool("version", false, "print version and exit")
 
 	// The stdlib flag package stops at the first positional argument, so
 	// "ascii hi --no-color" would treat "--no-color" as text. Parse flags
@@ -42,6 +45,11 @@ func main() {
 		}
 		args = append(args, flag.Arg(0))
 		rest = flag.Args()[1:]
+	}
+
+	if *showVersion {
+		fmt.Println("ascii", version)
+		return
 	}
 
 	if *fontAlias != "" {
