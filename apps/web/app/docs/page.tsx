@@ -2,6 +2,7 @@ import { headers } from 'next/headers';
 import SiteHeader from '@/components/ui/SiteHeader';
 import { SiteFooter } from '@/components/ui/SiteFooter';
 import DocsHighlight from '@/components/docs/DocsHighlight';
+import DownloadSection from '@/components/docs/DownloadSection';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,14 +45,6 @@ function detectOS(userAgent: string): Detected {
     return { label: 'Linux (amd64)', filename: 'ascii-linux-amd64', os: 'Linux' };
   }
   return { label: 'macOS (Apple Silicon)', filename: 'ascii-darwin-arm64', os: 'macOS' };
-}
-
-function installCommand(os: string, filename: string) {
-  const url = `${downloadBase}/${filename}`;
-  if (os === 'Windows') {
-    return `# PowerShell (run as Administrator)\nInvoke-WebRequest -Uri "${url}" -OutFile "ascii.exe"\nMove-Item .\\ascii.exe "$env:LOCALAPPDATA\\Microsoft\\WindowsApps\\ascii.exe"\n\n# Or with curl in WSL/Git Bash\ncurl -LO "${url}"`;
-  }
-  return `curl -LO "${url}"\nchmod +x "${filename}"\nmv "${filename}" /usr/local/bin/ascii`;
 }
 
 function Endpoint({ method, path, desc }: { method: string; path: string; desc: string }) {
@@ -109,42 +102,13 @@ open http://localhost:3000`}</Code>
   -H 'content-type: application/json' \\
   -d '{"text":"hello","font":"Standard"}'`}</Code>
 
-          <h1 id="cli">CLI</h1>
-          <p>
-            Pre-built binaries are available on the <a href={releasePage}>{releaseTag} release page</a>. Checksums are published as <code>ascii-{version}.sha256</code>.
-          </p>
-
-          <h2>Recommended download</h2>
-          <p>Detected from your browser: <strong>{detected.label}</strong></p>
-          <div className="download-grid">
-            <div className="download-card recommended">
-              <span className="label">Recommended</span>
-              <code>{detected.filename}</code>
-              <a className="btn" href={`${downloadBase}/${detected.filename}`} download>
-                Download
-              </a>
-            </div>
-          </div>
-          <Code>{installCommand(detected.os, detected.filename)}</Code>
-
-          <h2>All downloads</h2>
-          <div className="download-grid">
-            {assets.map((asset) => (
-              <div key={asset.filename} className={`download-card${asset.filename === detected.filename ? ' recommended' : ''}`}>
-                {asset.filename === detected.filename && <span className="label">Recommended</span>}
-                <code>{asset.filename}</code>
-                <a className="btn" href={`${downloadBase}/${asset.filename}`} download>
-                  Download
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <h2>Examples</h2>
-          <Code>{`ascii "hello" --font Big
-ascii --list
-ascii "hello" --animate --color
-ascii --version`}</Code>
+          <DownloadSection
+            version={version}
+            releasePage={releasePage}
+            downloadBase={downloadBase}
+            assets={assets}
+            serverDetected={detected}
+          />
 
           <h1 id="mcp">MCP</h1>
           <p>Point your MCP client at <code>/mcp</code> (Streamable HTTP). Tools: <code>generate_ascii</code>, <code>list_fonts</code>, <code>preview_font</code>, <code>animate</code>.</p>
